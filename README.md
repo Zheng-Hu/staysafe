@@ -1,2 +1,2 @@
-# congestion_tracker
+# staysafe
 HTML code for a website which can recommend uncongested locations
