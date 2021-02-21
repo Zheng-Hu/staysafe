@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>insta485</title>
+		<style>
+.one_post {
+	border: 2px solid black;
+	margin: 20px;
+	padding: 20px;
+}
+		</style>
+	</head>
+	<body>
+		<span style="float:right">
+			<a href="/explore/">explore</a >|
+			{% set log_user_path = "/u/" ~ logname ~ "/" %}
+			<a href="{{log_user_path}}">{{logname}}</a>
+		</span>
+		<a href="/">Home</a> |<b>Insta485</b>
+		<hr>
+
+		<div class="one_post">
+			{% set owner_path = "/u/" ~ owner ~ "/" %}
+			{% set postid_path = "/p/" ~ postid ~ "/" %}
+			<a href="{{owner_path}}">
+				<img src="{{owner_img_url}}" alt="picture" style="width:40px;height:40px;">
+			</a>
+			<a href="{{owner_path}}">{{owner}}</a>
+			<a href="{{postid_path}}">{{timestamp}}</a>
+			<p>
+				<img src="{{img_url}}" alt="picture" style ="width:500px;height:500px;">
+			</p>
+			{% if likes == 1 %}
+				<p>1 like</p>
+			{% else %}
+				<p>{{likes}} likes</p>
+			{% endif %}
+			{% for comment in comments %}
+				<p>
+					{% set comment_owner_path = "/u/" ~ comment.owner ~ "/" %}
+					<a href="{{comment_owner_path}}">{{comment.owner}}</a>
+					{{comment.text}}
+				</p>
+
+				{% if comment.owner == logname %}
+				<form action="{{postid_path}}" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="commentid" value="{{comment.commentid}}"/>
+					<input type="submit" name="uncomment" value="delete"/>
+				</form>
+				{% endif %}
+			{% endfor %}
+
+			{% if logname_likes_post %}
+			<form action="{{postid_path}}" method="post" enctype="multipart/form-data">
+				<input type="hidden" name="postid" value="{{postid}}"/>
+				<input type="submit" name="unlike" value="unlike"/>
+			</form>
+			{% else %}
+			<form action="{{postid_path}}" method="post" enctype="multipart/form-data">
+				<input type="hidden" name="postid" value="{{postid}}"/>
+				<input type="submit" name="like" value="like"/>
+			</form>
+			{% endif %}
+
+			<form action="{{postid_path}}" method="post" enctype="multipart/form-data">
+				<input type="hidden" name="postid" value="{{postid}}"/>
+				<input type="text" name="text"/>
+				<input type="submit" name="comment" value="comment"/>
+			</form>
+
+			{% if owner == logname %}
+			<form action="{{postid_path}}" method="post" enctype="multipart/form-data">
+				<input type="hidden" name="postid" value="{{postid}}"/>
+				<input type="submit" name="delete" value="delete this post"/>
+			</form>
+			{% endif %}
+		</div>
+
+
+
+	</body>
+</html>

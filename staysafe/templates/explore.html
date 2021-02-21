@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>insta485</title>
+	</head>
+	<body>
+		<span style="float:right">
+			<a href="/explore/">explore</a >|
+			{% set log_user_path = "/u/" ~ logname ~ "/" %}
+			<a href="{{log_user_path}}">{{logname}}</a>
+		</span>
+		<a href="/">Home</a> |<b>Insta485</b>
+		<hr>
+
+		<h1>Discover People</h1>
+		{% for item in not_following %}
+			<p>
+			<img src="{{item.user_img_url}}" alt="picture" style ="width:80px;height:80px;">
+
+			{% set user_path = "/u/" ~ item.username ~ "/" %}
+			<a href="{{user_path}}">{{item.username}}</a>
+			</p>
+            <!-- DO NOT CHANGE THIS (aside from where we say 'FIXME') -->
+            <form action="/explore/" method="post" enctype="multipart/form-data">
+            <input type="submit" name="follow" value="follow"/>
+            <input type="hidden" name="username" value="{{item.username}}"/>
+            </form>
+		{% endfor %}
+	</body>
+</html>

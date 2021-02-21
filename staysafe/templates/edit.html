@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>insta485</title>
+	</head>
+	<body>
+        <span style="float:right">
+            <a href="/explore/">explore</a>
+            {% set log_user_path = "/u/" ~ username ~ "/" %}
+            <a href="{{log_user_path}}">{{username}}</a>
+		</span>
+		<a href="/">Home</a> |<b>Insta485</b>
+		<hr>
+
+		<img src="{{filepath}}" alt="User Photo" style="width:40px;height:40px;">
+        <b>{{username}}</b>
+        <form action="/accounts/edit/" method="post" enctype="multipart/form-data">
+            Photo: 
+            <input type="file" name="file">
+            Full Name: 
+            <input type="text" name="fullname" value="{{fullname}}"/>
+            Email: 
+            <input type="text" name="email" value="{{email}}"/>
+            <input type="submit" name="update" value="submit"/>
+        </form>
+
+        <div>
+            <a href="/accounts/password/">
+                <b>Change password</b>
+            </a>
+        </div>
+
+        <div>
+            <a href="/accounts/delete/">
+                <b>Delete account</b>
+            </a>
+        </div>
+
+	</body>
+</html>

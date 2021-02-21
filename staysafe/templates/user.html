@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>insta485</title>
+	</head>
+	<body>
+		<span style="float:right">
+			<a href="/explore/">explore</a >|
+			{% set log_user_path = "/u/" ~ logname ~ "/" %}
+			<a href="{{log_user_path}}">{{logname}}</a>
+		</span>
+		<a href="/">Home</a> | <b>Insta485</b>
+		<hr>
+
+		<h1>{{username}}</h1>
+
+		{% if logname == username %}
+		<div>
+		<a href="/accounts/edit/">
+			<b>Edit profile</b>
+		</a>
+		</div>
+		<form action="/accounts/logout/" method="post" enctype="multipart/form-data">
+			<input type="submit" name="logout" value="Logout"/>
+		</form>
+		{% elif logname_follows_username %}
+		<p>following</p>
+		<form action="/u/{{username}}/" method="post" enctype="multipart/form-data">
+			<input type="submit" name="unfollow" value="unfollow"/>
+			<input type="hidden" name="username" value="{{username}}"/>
+		</form>
+		{% else %}
+		<p>not following</p>
+		<form action="/u/{{username}}/" method="post" enctype="multipart/form-data">
+			<input type="submit" name="follow" value="follow"/>
+			<input type="hidden" name="username" value="{{username}}"/>
+		</form>
+		{% endif %}
+
+
+		<p>
+		{% if total_posts == 1 %}
+			1 post
+		{% else %}
+			{{total_posts}} posts
+		{% endif %}
+		
+		{% set followers_path = "/u/" ~ username ~ "/followers/" %}
+		<a href="{{followers_path}}">
+			{% if followers == 1 %}
+				1 follower
+			{% else %}
+				{{followers}} followers
+			{% endif %}
+		</a>
+
+		{% set following_path = "/u/" ~ username ~ "/following/" %}
+		<a href="{{following_path}}">{{following}} following</a>
+		</p>
+
+		<p>{{fullname}}</p>
+
+		{% if logname == username %}
+		<div>
+			<form action="/u/{{username}}/" method="post" enctype="multipart/form-data">
+				<input type="file" name="file">
+				<input type="submit" name="create_post" value="upload new post"/>
+			</form>
+		</div>
+		{% endif %}
+
+		<p>
+			{% for post in posts %}
+				{% set postid_path = "/p/" ~ post.postid ~ "/" %}
+				<a href="{{postid_path}}">
+					<img src="{{post.img_url}}" alt="picture" style ="width:200px;height:200px;">
+				</a>
+			{% endfor %}
+		</p>
+	</body>
+</html>

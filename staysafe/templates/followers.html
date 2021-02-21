@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>insta485</title>
+	</head>
+	<body>
+		<span style="float:right">
+			<a href="/explore/">explore</a >|
+			{% set log_user_path = "/u/" ~ logname ~ "/" %}
+			<a href="{{log_user_path}}">{{logname}}</a>
+		</span>
+		<a href="/">Home</a> |<b>Insta485</b>
+		<hr>
+
+		<h1>Followers</h1>
+		{% for follower in followers %}
+			<p>
+			<img src="{{follower.user_img_url}}" alt="picture" style ="width:80px;height:80px;">
+
+			{% set user_path = "/u/" ~ follower.username ~ "/" %}
+			<a href="{{user_path}}">{{follower.username}}</a>
+			</p>
+
+			{% if logname != follower.username %}
+				{% if follower.logname_follows_username %}
+					following
+					<form action="/u/{{username}}/followers/" method="post" enctype="multipart/form-data">
+						<input type="submit" name="unfollow" value="unfollow"/>
+						<input type="hidden" name="username" value="{{follower.username}}"/>
+					</form>
+				{% else %}
+					not following
+					<form action="/u/{{username}}/followers/" method="post" enctype="multipart/form-data">
+						<input type="submit" name="follow" value="follow"/>
+						<input type="hidden" name="username" value="{{follower.username}}"/>
+					</form>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+	</body>
+</html>

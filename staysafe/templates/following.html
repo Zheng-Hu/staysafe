@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>insta485</title>
+	</head>
+	<body>
+		<span style="float:right">
+			<a href="/explore/">explore</a >|
+			{% set log_user_path = "/u/" ~ logname ~ "/" %}
+			<a href="{{log_user_path}}">{{logname}}</a>
+		</span>
+		<a href="/">Home</a> |<b>Insta485</b>
+		<hr>
+
+		<h1>Following</h1>
+		{% for item in following %}
+			<p>
+			<img src="{{item.user_img_url}}" alt="picture" style ="width:80px;height:80px;">
+
+			{% set user_path = "/u/" ~ item.username ~ "/" %}
+			<a href="{{user_path}}">{{item.username}}</a>
+			</p>
+			{% if logname != item.username %}
+				{% if item.logname_follows_username %}
+					following
+					<form action="/u/{{username}}/following/" method="post" enctype="multipart/form-data">
+						<input type="submit" name="unfollow" value="unfollow"/>
+						<input type="hidden" name="username" value="{{item.username}}"/>
+					</form>
+				{% else %}
+					not following
+					<form action="/u/{{username}}/following/" method="post" enctype="multipart/form-data">
+						<input type="submit" name="follow" value="follow"/>
+						<input type="hidden" name="username" value="{{item.username}}"/>
+					</form>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+	</body>
+</html>
