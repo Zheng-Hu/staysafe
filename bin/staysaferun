@@ -1,0 +1,22 @@
+#!/bin/bash
+# staysaferun
+
+# Stop on errors
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -Eeuo pipefail
+
+# 1. Call insta485db create if the datebase file does not exist
+echo "+ test -e var/insta485.sqlite3"
+test -e var/insta485.sqlite3
+
+# 2. Set FLASK_ENV and FLASK_APP environment variables
+echo "+ export FLASK_ENV=development"
+echo "+ FLASK_ENV=development"
+export FLASK_ENV=development
+echo "+ export FLASK_APP=staysafe"
+echo "+ FLASK_APP=staysafe"
+export FLASK_APP=staysafe
+
+# 3. Run the development server on port 8000
+echo "+ flask run --host 0.0.0.0 --port 8000"
+flask run --host 0.0.0.0 --port 8000
