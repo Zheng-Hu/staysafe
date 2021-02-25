@@ -1,6 +1,5 @@
 """
 StaySafe index (main) view.
-
 URLs include:
 /
 """
@@ -19,3 +18,9 @@ def show_index():
 @staysafe.app.route('/Duder/', methods=['GET', 'POST'])
 def show_Duder():
     return flask.render_template("DuderLibrary.html")
+
+@staysafe.app.route('/Predict/', methods=['GET', 'POST'])
+def show_Predict():
+    if flask.request.method == 'POST':
+         return flask.redirect(flask.url_for('show_Duder'))
+    return flask.render_template("predict.html")
