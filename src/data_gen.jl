@@ -18,15 +18,22 @@ data = Array{Any}(missing,n,4+24*7)
 autolabels = Array{String}(undef,24*7)
 #number of people we're generating
 for i in 1:n
+    
+    #TODO: better name initialization
+    
     data[i,1] = randstring(rand(4:8))
+
+
+
+
     data[i,2] = i
     #centered on ann arbor for easier plotting
     data[i,3] = 42.2808 + .1 * (rand() - .5)
     data[i,4] = 83.7430 + .1 * (rand() - .5)
 
     for j in 0:6
-        local d = Normal(0,1 + 2*rand())
-        local lo,hi = -2,2
+        local d = Normal(0,1 + 2*rand()) #random standard deviation, 1-3
+        local lo,hi = -2,2 #standard deviations out
         local x = range(lo,hi;length=24)
         data[i,24*j+5:24*j+28] = pdf.(d,x) * (.75+.5 * rand()) / mean(pdf.(d,x)) #up to double the dist
     end
