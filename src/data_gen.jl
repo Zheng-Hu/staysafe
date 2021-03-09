@@ -14,6 +14,8 @@ days = Dict([
 ])
 
 n = 100
+f = open("building_names.txt")
+s = readlines(f)
 data = Array{Any}(missing,n,4+24*7)
 autolabels = Array{String}(undef,24*7)
 #number of people we're generating
@@ -21,7 +23,7 @@ for i in 1:n
     
     #TODO: better name initialization
     
-    data[i,1] = randstring(rand(4:8))
+    data[i,1] = s[i]
 
 
 
@@ -55,8 +57,8 @@ CSV.write("sample_data.csv", df)
 #standard congestion at a data point is 1.
 #average congestion per day varies from .75 to 1.25.
 #might wanna add more customization if you want?
-plot()
-plot(title = "Monday at 01",data[1,5:28],yrange=[.5,1.5],label = "Monday at 01",xlabel = "Hour",ylabel = "Congestion")
-plot!(title = "Tuesday at 01",data[1,29:52],yrange=[.5,1.5])
-plot!(title = "Monday at 02",data[2,5:28],yrange=[.5,1.5],label = "Monday at 02")
-plot!(title = "Data",data[1,29:52],yrange=[.5,1.5],label = "Tuesday at 02")
+#plot()
+#plot(title = "Monday at 01",data[1,5:28],yrange=[.5,1.5],label = "Monday at 01",xlabel = "Hour",ylabel = "Congestion")
+#plot!(title = "Tuesday at 01",data[1,29:52],yrange=[.5,1.5])
+#plot!(title = "Monday at 02",data[2,5:28],yrange=[.5,1.5],label = "Monday at 02")
+#plot!(title = "Data",data[1,29:52],yrange=[.5,1.5],label = "Tuesday at 02")
