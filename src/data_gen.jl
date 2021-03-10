@@ -57,8 +57,9 @@ CSV.write("sample_data.csv", df)
 #standard congestion at a data point is 1.
 #average congestion per day varies from .75 to 1.25.
 #might wanna add more customization if you want?
-#plot()
-#plot(title = "Monday at 01",data[1,5:28],yrange=[.5,1.5],label = "Monday at 01",xlabel = "Hour",ylabel = "Congestion")
-#plot!(title = "Tuesday at 01",data[1,29:52],yrange=[.5,1.5])
-#plot!(title = "Monday at 02",data[2,5:28],yrange=[.5,1.5],label = "Monday at 02")
-#plot!(title = "Data",data[1,29:52],yrange=[.5,1.5],label = "Tuesday at 02")
+plot()
+plot(title = "Monday at 01",data[1,5:28],yrange=[.5,1.5],label = "Monday at Building#1",xlabel = "Hour",ylabel = "Congestion")
+#plot!(title = "Tuesday at 01",data[1,29:52],yrange=[.5,1.5],label="Tuesday at Building#1")
+plot!(title = "Monday at 02",data[2,5:28],yrange=[.5,1.5],label = "Monday at Building#2")
+plot!(title = "Congestion Data Sample",data[1,29:52],yrange=[.5,1.5],label = "Tuesday at Building#2")
+savefig("datafigure")
