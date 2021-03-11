@@ -29,15 +29,20 @@
     </div>
 
     <br>
-    <button class="button">Search</button>
+    <!-- <button class="button">Search</button>
     <div class="loader">
       <div class="check">
         <span class="check-one"></span>
         <span class="check-two"></span>
       </div>
-    </div>
+    </div> -->
   </form>
-
 </form>
+
+<form action="/Predict/" method="post" enctype="multipart/form-data">
+  <input type="text" name="text" required/>
+  <input type="submit" name="specific" value="Search"/>
+</form>
+
 </body>
 </html>
