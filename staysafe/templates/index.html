@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/predict.css">
+<script type="text/javascript" src="javascript/predict.js"></script>
+
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="/">StaySafe</a>
+</div>
+
+
+<form action="predict.html" method="post" enctype="multipart/form-data">
+  <form>
+    Time
+    <input class="center-block" type="datetime-local" name="name" class="question" id="nme" required autocomplete="off" />
+   
+    Building
+    <br>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <div class="form__group">
+    <input type="text" class="form__input" id="location" placeholder="Building Name" required="" />
+    
+  </div>
+
+    <br>
+    <button class="button">Search</button>
+    <div class="loader">
+      <div class="check">
+        <span class="check-one"></span>
+        <span class="check-two"></span>
+      </div>
+    </div>
+  </form>
+
+</form>
+</body>
+</html>

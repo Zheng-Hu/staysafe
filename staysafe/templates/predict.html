@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/predict.css">
-<script type="text/javascript" src="javascript/predict.js"></script>
-
+  <link rel="stylesheet" href="css/predict.css">
+  <script type="text/javascript" src="javascript/duder.js"></script>
 </head>
 <body>
 
@@ -12,29 +11,16 @@
 </div>
 
 
-<form action="javascript:result();" method="post" enctype="multipart/form-data">
-  <form>
-    Time
-    <input class="center-block" type="datetime-local"  name="name" class="question" id="nme" required autocomplete="off" />
-   
-    Building
-    <br>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <div class="form__group">
-    <input type="text" class="form__input" id="location" placeholder="Building Name" required="" />
-    
-  </div>
+<div style="padding-top:10px">
+<img src="images/duder.jpg" alt="Duderstadt Center (The Dude)", style="width:600px;height:400px;"> 
+</div>
+<div style="font-size: 27px">
+  <p>Longtitute and Latitute: </p>
+  <p>42.287203971127525, 83.69756834945494</p>
+  <p>Congestion Level: 1.440</p>
+</div>
+ 
 
-    <br>
-    <button class="button">Search</button>
-    <div class="loader">
-      <div class="check">
-        <span class="check-one"></span>
-        <span class="check-two"></span>
-      </div>
-    </div>
-  </form>
 
-</form>
 </body>
 </html>
