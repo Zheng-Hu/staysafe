@@ -5,18 +5,16 @@ StaySafe is a website which can recommend uncongested locations.
 Developers: Jing Dong, Zheng Hu, Connor Martin, Qinjuan Xie
 
 ## Installation
-Please create a Python virtual environment for running the website. Download the code under your folder.
- ```
- $ pwd
-   /folder
- $ python3 -m venv env
- $ source env/bin/activate
- ```
+
+Please install the required documents through
+```
+pip install -r requirements.txt
+```
+
 ## Usage
-If you have every package required downloaded in venv, you can run the website by running
-```
-$ ./bin/staysaferun
-```
-Open http://localhost:8000/ on your laptop, you should be able to see our website.
- 
-Note: Searching function is still under construction. You may input the name of the building exactly correct to find relative information.
+The website can be viewed through opening up the html file in Google Chrome. 
+To try out the search function, you can type in 'duder library' in the building input.
+The website will negivate to a sample result page.
+
+The search function is still under construction, and therefore only the duder library sample can be viewed.
+
