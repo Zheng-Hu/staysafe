@@ -41,17 +41,11 @@ for i in 1:n
         local x = range(lo,hi;length=24)
         congestion[first+24*j+1:first+24*j+24,2] .= j
         congestion[first+24*j+1:first+24*j+24,3] = Array(1:24)
-        congestion[first+24*j+1:first+24*j+24,4] = pdf.(d,x) * (.75+.5 * rand()) / mean(pdf.(d,x)) #up to double the dist
+        congestion[first+24*j+1:first+24*j+24,4] = (pdf.(d,x) * (.75+.5 * rand()) / mean(pdf.(d,x)).-0.1754461039615053)/2 #0 to 1
     end
 end
 
-for j in 0:6
-    autolabels[24*j+1:24*j+24] = string.(days[j],string.(1:24))
-end
 
-#generate the label scheme
-labels = ["Name","ID","Longitude","Latitude"]
-labels = cat(labels,autolabels,dims=1)
 
 df = DataFrame(buildings,building_labels)
 CSV.write("buildings.csv", df)
