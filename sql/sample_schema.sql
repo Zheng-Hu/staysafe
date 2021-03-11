@@ -13,6 +13,6 @@ CREATE TABLE congestion(
     day_of_week INTEGER NOT NULL, /* { 0 (Sunday), 1, 2, 3, 4, 5, 6} */
     time_period INTEGER NOT NULL, /* { 0 (00:00-00:59), 1, 2, ..., 22, 23 (23:00-23:59) } */
     cong_level NUMERIC(19,17) NOT NULL, /* 0 <= congestion level <= 1 */
-    PRIMARY KEY(day_of_week, time_period),
+    PRIMARY KEY(owner_id, day_of_week, time_period),
     FOREIGN KEY(owner_id) REFERENCES buildings(id)
 );
