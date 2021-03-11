@@ -3,19 +3,10 @@
 # A .gitignore file will tell git which files and directories to ignore and
 # not add to version control.
 
-# EECS 485 All Projects
-submit.tar.gz
-submit.tar.xz
-starter_files.tar.gz
-starter_files.tar.xz
-
-# EECS 485 Project 2
 *.pem
 *.db
 var/
 
-# EECS 485 Project 3
-node_modules/
 cookies.txt
 bundle.js
 
