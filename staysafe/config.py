@@ -17,4 +17,4 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 MAX_CONTENT_LENGTH = 16 * 1024 * 1024
 
 # Database file is var/insta485.sqlite3
-DATABASE_FILENAME = STAYSAFE_ROOT/'var'/'insta485.sqlite3' # FIXME
+# DATABASE_FILENAME = STAYSAFE_ROOT/'var'/'insta485.sqlite3' # FIXME
