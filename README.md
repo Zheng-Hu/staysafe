@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-The website can be viewed through opening up the html file in Google Chrome. 
+The website can be viewed through opening up the ‘index.html' file from the folder staysafe/templates in Google Chrome. 
 To try out the search function, you can type in 'duder library' in the building input.
 The website will negivate to a sample result page.
 
