@@ -12,37 +12,29 @@
 </div>
 
 
-<form action="/Predict/" method="post" enctype="multipart/form-data">
+<form action="javascript:result();" method="post" enctype="multipart/form-data">
   <form>
     Time
     <input class="center-block" type="datetime-local" value="2021-03-08T13:59:59" name="name" class="question" id="nme" required autocomplete="off" />
    
     Building
-    <div class="box">
-      <select>
-        <option>Duder Library</option>
-        <option>EECS building</option>
-        <option>Bob and Betty Beyster Building</option>
-        <option>South Quad</option>
-        <option>East Quad</option>
-      </select>
-    </div>
+    <br>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <div class="form__group">
+    <input type="text" class="form__input" id="location" placeholder="Building Name" required="" />
+    
+  </div>
 
     <br>
-    <!-- <button class="button">Search</button>
+    <button class="button">Search</button>
     <div class="loader">
       <div class="check">
         <span class="check-one"></span>
         <span class="check-two"></span>
       </div>
-    </div> -->
+    </div>
   </form>
-</form>
 
-<form action="/Predict/" method="post" enctype="multipart/form-data">
-  <input type="text" name="text" required/>
-  <input type="submit" name="specific" value="Search"/>
 </form>
-
 </body>
 </html>
