@@ -16,5 +16,5 @@ UPLOAD_FOLDER = STAYSAFE_ROOT/'var'/'uploads'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 MAX_CONTENT_LENGTH = 16 * 1024 * 1024
 
-# Database file is var/insta485.sqlite3
-# DATABASE_FILENAME = STAYSAFE_ROOT/'var'/'insta485.sqlite3' # FIXME
+# Database file is var/staysafe.sqlite3
+DATABASE_FILENAME = STAYSAFE_ROOT/'var'/'staysafe.sqlite3'
