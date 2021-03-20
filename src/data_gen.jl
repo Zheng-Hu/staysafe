@@ -15,7 +15,7 @@ s = readlines(f)
 #for posterity:
 
 building_labels = ["id","building_name","longitude","latitude"]
-buildings = Array{Any}(missing,n,4)
+buildings = Array{Any}(missing,n,5)
 congestion_labels = ["owner_id","day_of_week", "time_period", "cong_level"]
 #less efficient since the markers are part of the data
 #but my understanding is that this is easier to pull
