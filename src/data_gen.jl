@@ -29,7 +29,7 @@ for i in 1:n
     
     buildings[i,1] = i #ID
     buildings[i,2] = s[i] #NAME
-    #centered on ann arbor for easier plotting
+    #centered on ann arbor for plotting functionality
     buildings[i,3] = 42.2808 + .1 * (rand() - .5) #LONG
     buildings[i,4] = 83.7430 + .1 * (rand() - .5) #LAT
 
@@ -56,8 +56,8 @@ df2 = DataFrame(congestion,congestion_labels)
 CSV.write("congestion.csv", df2)
 
 
-#basically, each day has a "person quantity"
-#which is spread via a normal distribution.
+#basically, each day has a "person quantity" from .75 to 1.25
+#which is spread via normal distributions
 #might wanna add more customization if you want?
 """
 plotting stuff
