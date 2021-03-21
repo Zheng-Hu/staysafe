@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="css/predict.css">
-  <script type="text/javascript" src="javascript/duder.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css')}}">
 </head>
 <body>
 
@@ -12,7 +11,7 @@
 
 
 <div style="padding-top:10px">
-<img src="images/duder.jpg" alt="Duderstadt Center (The Dude)", style="width:600px;height:400px;"> 
+<img src="{{url_for('static', filename='images/DuderLibrary.jpg')}}"alt="Duderstadt Center (The Dude)", style="width:600px;height:400px;"> 
 </div>
 <div style="font-size: 27px">
   <p>Longtitute and Latitute: </p>
