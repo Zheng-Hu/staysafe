@@ -1,101 +1,101 @@
-id,building_name,longitude,latitude
-1,Angell Hall,42.24253936903917,83.70922845352632
-2,Alice Lloyd Hall,42.26596136994759,83.72568690040006
-3,Alumni Memorial Hall (Art Museum),42.235743618206655,83.70595614015271
-4,Burton Memorial Tower,42.243258426548536,83.78201128865118
-5,Business Administration,42.28808418273918,83.7574337729498
-6,Clarence Cook Little Building (CCLittle),42.330223898771266,83.71647771926943
-7,Central Campus Recreation Building (CCRB),42.272941923172226,83.74172474712417
-8,Chemistry Building (Chem),42.23242004782074,83.70797973778912
-9,Couzens Hall,42.32426900579269,83.70627651622132
-10,Crisler Arena,42.30529199331657,83.71429786636624
-11,"Dana Building (School of Natural Resources & Environment, SNRE)",42.27574151217515,83.73768800468326
-12,"Dance Building, 1310 N University Court",42.32202645292616,83.70566957719917
-13,William Davidson Hall,42.24317127914212,83.73059066840842
-14,David M. Dennison Building,42.283340556968014,83.74460134484013
-15,Dental Building,42.25021011605496,83.76405027790564
-16,Executive Education,42.242617106956345,83.75585972136065
-17,East Hall,42.32294490734097,83.75166213603629
-18,East Quadrangle,42.29273286545814,83.72498916419401
-19,Frieze Building,42.32197615562506,83.79055348326797
-20,Harlan Hatcher Graduate Library,42.23529519768844,83.70149399344358
-21,"Hale Auditorium, School of Business Administration",42.32478775845475,83.71178419499866
-22,Haven Hall,42.27874069248323,83.70659331280771
-23,Hutchins Hall,42.321726462377406,83.70062292876568
-24,Intramural Building (IM Building),42.31959542776993,83.79060113141848
-25,Institute for Social Research (ISR),42.306328084842086,83.71189395552788
-26,Kresge Library,42.28059071044447,83.69714700927096
-27,Kellogg Eye Center,42.23314111829528,83.70711207258712
-28,Kelsey Museum of Archaeology (Newberry Hall),42.27405655677093,83.76400428871035
-29,Kresge Hearing Research Institute,42.234871880589836,83.71207649288573
-30,Lane Hall,42.285957092079705,83.70594771065433
-31,Michigan League,42.27569708041131,83.75560117266309
-32,Law Library,42.27666935303461,83.78887424101286
-33,Lorch Hall,42.28874869817409,83.69795455765156
-34,"Literature, Science, and the Arts Building (LSA Building)",42.248701052908274,83.72969198490661
-35,Life Sciences Institute (LSI),42.27747817694166,83.76550781578115
-36,Mary Markley Hall,42.266504534901884,83.74728892379098
-37,Mason Hall,42.23209843805643,83.78751581244464
-38,Mental Health Research Institute (MHRI),42.309131442048766,83.74140321902365
-39,Modern Languages Building (MLB),42.25470662790417,83.73713675667743
-40,Mosher Jordan Hall,42.24715375398422,83.73700389864223
-41,North Hall,42.28020208234984,83.74268199815216
-42,North Ingalls Building,42.27922630132239,83.73709351409853
-43,Edward Henry Kraus Natural Science Building (NatSci),42.23503748731165,83.76204875885917
-44,North University Building,42.27109770149914,83.70399924939875
-45,Palmer Commons,42.279876150157165,83.71306600457761
-46,Paton Accounting Center,42.245808710702605,83.79016486530597
-47,Power Center for the Performing Arts,42.29457596310586,83.7623696113
-48,Horace H. Rackham School of Graduate Studies,42.30226524860577,83.7632836317754
-49,Randall Laboratory,42.261153026344935,83.70912792763409
-50,William D. Revelli Hall,42.32351254077767,83.7237546638005
-51,Stephen M. Ross Academic Center,42.24040671691431,83.70883421407191
-52,Ruthven Museums Building (Natural History Museum),42.29416400436007,83.71801709038172
-53,Glenn E. Schembechler Hall,42.327774096118894,83.71156197907058
-54,School of Education Building,42.26016445549336,83.76657879444141
-55,Shapiro Undergraduate Library (UGLi),42.24477111930748,83.79235986735112
-56,School of Nursing (North Ingalls Building),42.29140009092535,83.73452564932471
-57,"Henry Vaughan Building, School of Public Health I",42.27859837272522,83.78750889905402
-58,"Thomas Francis, Jr Building, School of Public Health II",42.31470836395515,83.69881203961663
-59,School of Social Work Building,42.29448051584884,83.72052788037222
-60,South Hall (Law School),42.25823187249329,83.7827068669614
-61,202 South Thayer Building,42.24917366536337,83.78228003985281
-62,Stockwell Hall,42.24012292138473,83.7650501072861
-63,Tappan Hall,42.326018563645746,83.74100726623965
-64,Tisch Hall,42.25560577046821,83.7154818771954
-65,Michigan Union,42.23092475204706,83.75053750277557
-66,Undergraduate Science Building (USB),42.26428438460023,83.72827784065471
-67,"University Towers, 1225 South University",42.243213779372205,83.75216163740525
-68,Joan and Sanford Weill Hall,42.28842122406974,83.74375811276659
-69,West Hall,42.28687381461277,83.75157921203571
-70,North Campus,42.24001749029376,83.70751408942594
-71,Art and Architecture Building,42.30130481380046,83.7700591553299
-72,Walter E. Lay Automotive Lab,42.30734215795341,83.71513214197921
-73,"Blanch Anderson Moore Hall, School of Music",42.29287829880091,83.72749819544148
-74,Bursley Hall,42.2758374823079,83.78175842182134
-75,"Charles R. Walgreen, Jr. Drama Center",42.255180120391884,83.7312605956844
-76,Chrysler Center,42.24314342004894,83.77031764230837
-77,Cooley Building,42.29506727304172,83.71215614047061
-78,Computer Science and Engineering Building,42.25227037898929,83.73866928966297
-79,Dow Engineering Building,42.325743912826844,83.72842505935195
-80,Duderstadt Center (The Dude),42.246015860555005,83.77970097660281
-81,Electrical Engineering and Computer Science Building (EECS),42.25935079116635,83.73052974653494
-82,Engineering Program Building,42.23139810557457,83.76817075090237
-83,Engineering Research Building 1,42.268746967886834,83.72662267089599
-84,Engineering Research Building 2,42.2821384727482,83.71442040639704
-85,Environmental & Water Resources Engineering Building,42.26422809532845,83.77304167297923
-86,Ford Library,42.260099483625545,83.76462637414564
-87,Francois-Xavier Bagnoud Building,42.30377066113065,83.74173682648215
-88,G. G. Brown Laboratory,42.24231285252365,83.71617969894895
-89,Industrial and Operations Engineering Building,42.276486598744306,83.75104676544605
-90,Lurie Biomedical Engineering Building,42.305272296469546,83.75926741792385
-91,Lurie Engineering Center,42.28472908370509,83.73575233498708
-92,"Max Kade House, 627 Oxford Street",42.279998805164595,83.70526977961755
-93,Naval Architecture and Marine Engineering Building,42.24068817605663,83.73219154162753
-94,North Campus Recreation Building,42.28614067717247,83.7907613027154
-95,Phoenix Memorial Laboratory,42.28065469393674,83.75539373004784
-96,Pierpont Commons (formerly North Campus Commons),42.24742750821944,83.74456179223994
-97,"Earl V. Moore Building, School of Music",42.30708993748039,83.7000900858795
-98,Space Research Building,42.25407560576855,83.74629878708916
-99,Sterns Building,42.25400330715843,83.78501354175134
-100,Medical Campus,42.279275219528614,83.77730849320632
+id,building_name,longitude,latitude,category
+1,Angell Hall,42.27243426045909,83.78657298485258,Angell Hall
+2,Alice Lloyd Hall,42.248168735202306,83.7469591384206,Alice Lloyd Hall
+3,Alumni Memorial Hall (Art Museum),42.256085401199286,83.78276900792025,Alumni Memorial Hall (Art Museum)
+4,Burton Memorial Tower,42.25909111949085,83.78829373682217,Burton Memorial Tower
+5,Business Administration,42.27403060978916,83.78119142012619,Business Administration
+6,Clarence Cook Little Building (CCLittle),42.31231400231778,83.73433510550775,Clarence Cook Little Building (CCLittle)
+7,Central Campus Recreation Building (CCRB),42.302632727804344,83.7627275794847,Central Campus Recreation Building (CCRB)
+8,Chemistry Building (Chem),42.276104980571944,83.73420879331339,Chemistry Building (Chem)
+9,Couzens Hall,42.27660752556806,83.76086926791162,Couzens Hall
+10,Crisler Arena,42.295942132303686,83.72731913726565,Crisler Arena
+11,"Dana Building (School of Natural Resources & Environment, SNRE)",42.29526374610313,83.77695192400591,"Dana Building (School of Natural Resources & Environment, SNRE)"
+12,"Dance Building, 1310 N University Court",42.250709493875775,83.77693653162801,"Dance Building, 1310 N University Court"
+13,William Davidson Hall,42.29464603725277,83.77760570553767,William Davidson Hall
+14,David M. Dennison Building,42.2424015565165,83.75822255253809,David M. Dennison Building
+15,Dental Building,42.26710811322265,83.72399981411617,Dental Building
+16,Executive Education,42.28501876176787,83.70142177574829,Executive Education
+17,East Hall,42.32367116177814,83.74675898042659,East Hall
+18,East Quadrangle,42.24254089827202,83.78100686931974,East Quadrangle
+19,Frieze Building,42.25561577800076,83.70627235939472,Frieze Building
+20,Harlan Hatcher Graduate Library,42.28558575351078,83.72000117648535,Harlan Hatcher Graduate Library
+21,"Hale Auditorium, School of Business Administration",42.23976121732401,83.77068892919986,"Hale Auditorium, School of Business Administration"
+22,Haven Hall,42.2375241895646,83.73791804260219,Haven Hall
+23,Hutchins Hall,42.29402878324869,83.74863627880488,Hutchins Hall
+24,Intramural Building (IM Building),42.266706761853186,83.76060508130597,Intramural Building (IM Building)
+25,Institute for Social Research (ISR),42.3057454823272,83.75413166815873,Institute for Social Research (ISR)
+26,Kresge Library,42.25653305226298,83.76284161816632,Kresge Library
+27,Kellogg Eye Center,42.23949251455434,83.73834325010019,Kellogg Eye Center
+28,Kelsey Museum of Archaeology (Newberry Hall),42.249559256683064,83.73533053160709,Kelsey Museum of Archaeology (Newberry Hall)
+29,Kresge Hearing Research Institute,42.31372452493942,83.70523620865924,Kresge Hearing Research Institute
+30,Lane Hall,42.23743686423716,83.71358235375807,Lane Hall
+31,Michigan League,42.30737974492945,83.78298982712141,Michigan League
+32,Law Library,42.27586741262144,83.72445736936167,Law Library
+33,Lorch Hall,42.305154861564034,83.77950583808193,Lorch Hall
+34,"Literature, Science, and the Arts Building (LSA Building)",42.268994061116224,83.74788655978975,"Literature, Science, and the Arts Building (LSA Building)"
+35,Life Sciences Institute (LSI),42.2717682748266,83.76307511676546,Life Sciences Institute (LSI)
+36,Mary Markley Hall,42.25691474004898,83.75746321674599,Mary Markley Hall
+37,Mason Hall,42.32984868393997,83.7482145647617,Mason Hall
+38,Mental Health Research Institute (MHRI),42.25615587761264,83.70392871035803,Mental Health Research Institute (MHRI)
+39,Modern Languages Building (MLB),42.254281838532094,83.78492544355748,Modern Languages Building (MLB)
+40,Mosher Jordan Hall,42.27191599212084,83.73429797379004,Mosher Jordan Hall
+41,North Hall,42.3053033847383,83.78907410159859,North Hall
+42,North Ingalls Building,42.24966542042547,83.75324877097009,North Ingalls Building
+43,Edward Henry Kraus Natural Science Building (NatSci),42.29172259874642,83.7890085209437,Edward Henry Kraus Natural Science Building (NatSci)
+44,North University Building,42.313300766239244,83.75043906239567,North University Building
+45,Palmer Commons,42.24702240376169,83.74696486262475,Palmer Commons
+46,Paton Accounting Center,42.315632664530966,83.71329311071895,Paton Accounting Center
+47,Power Center for the Performing Arts,42.261896948949484,83.76561061500166,Power Center for the Performing Arts
+48,Horace H. Rackham School of Graduate Studies,42.285320456448176,83.75311936424305,Horace H. Rackham School of Graduate Studies
+49,Randall Laboratory,42.25744197332428,83.73097344639568,Randall Laboratory
+50,William D. Revelli Hall,42.314270063682585,83.76152841615843,William D. Revelli Hall
+51,Stephen M. Ross Academic Center,42.27238382726678,83.71904521204286,Stephen M. Ross Academic Center
+52,Ruthven Museums Building (Natural History Museum),42.29712402505209,83.7366480011791,Ruthven Museums Building (Natural History Museum)
+53,Glenn E. Schembechler Hall,42.29085968948417,83.71183283291582,Glenn E. Schembechler Hall
+54,School of Education Building,42.28618238639496,83.77149005680099,School of Education Building
+55,Shapiro Undergraduate Library (UGLi),42.30457285920322,83.73633069214529,Shapiro Undergraduate Library (UGLi)
+56,School of Nursing (North Ingalls Building),42.23102327929125,83.70915351085318,School of Nursing (North Ingalls Building)
+57,"Henry Vaughan Building, School of Public Health I",42.27785328172552,83.74580294824158,"Henry Vaughan Building, School of Public Health I"
+58,"Thomas Francis, Jr Building, School of Public Health II",42.232122394779736,83.74279173062759,"Thomas Francis, Jr Building, School of Public Health II"
+59,School of Social Work Building,42.26442909224859,83.7051868581399,School of Social Work Building
+60,South Hall (Law School),42.32733083557548,83.72554116783076,South Hall (Law School)
+61,202 South Thayer Building,42.27734490054758,83.77350540199919,202 South Thayer Building
+62,Stockwell Hall,42.25219088559571,83.77221348207503,Stockwell Hall
+63,Tappan Hall,42.253765461757695,83.7394611298806,Tappan Hall
+64,Tisch Hall,42.234158733678065,83.78261140709928,Tisch Hall
+65,Michigan Union,42.2959611322496,83.69933951840711,Michigan Union
+66,Undergraduate Science Building (USB),42.31797108823817,83.70244587776746,Undergraduate Science Building (USB)
+67,"University Towers, 1225 South University",42.27716416918384,83.77909448306241,"University Towers, 1225 South University"
+68,Joan and Sanford Weill Hall,42.32782033775248,83.78905715317526,Joan and Sanford Weill Hall
+69,West Hall,42.26600411575721,83.74507420390972,West Hall
+70,North Campus,42.26391729674589,83.72223393233327,North Campus
+71,Art and Architecture Building,42.29864256729982,83.7650959144634,Art and Architecture Building
+72,Walter E. Lay Automotive Lab,42.26766856504725,83.72789778297759,Walter E. Lay Automotive Lab
+73,"Blanch Anderson Moore Hall, School of Music",42.26785171992832,83.72357993794611,"Blanch Anderson Moore Hall, School of Music"
+74,Bursley Hall,42.30324861939217,83.7639853515954,Bursley Hall
+75,"Charles R. Walgreen, Jr. Drama Center",42.26419790333457,83.74916436200552,"Charles R. Walgreen, Jr. Drama Center"
+76,Chrysler Center,42.26229107758001,83.77630368241287,Chrysler Center
+77,Cooley Building,42.32285911875115,83.76832134745852,Cooley Building
+78,Computer Science and Engineering Building,42.27869592175935,83.6944981665822,Computer Science and Engineering Building
+79,Dow Engineering Building,42.2733708543581,83.7634254103679,Dow Engineering Building
+80,Duderstadt Center (The Dude),42.26304201287369,83.69825163505556,Duderstadt Center (The Dude)
+81,Electrical Engineering and Computer Science Building (EECS),42.2399587328926,83.78020287738836,Electrical Engineering and Computer Science Building (EECS)
+82,Engineering Program Building,42.24695374294775,83.75930410276145,Engineering Program Building
+83,Engineering Research Building 1,42.326558271334434,83.73942766606844,Engineering Research Building 1
+84,Engineering Research Building 2,42.23997089776586,83.73988754974731,Engineering Research Building 2
+85,Environmental & Water Resources Engineering Building,42.3261110924899,83.7339620546362,Environmental & Water Resources Engineering Building
+86,Ford Library,42.28038789898578,83.7335125332485,Ford Library
+87,Francois-Xavier Bagnoud Building,42.26863993754313,83.7423773152276,Francois-Xavier Bagnoud Building
+88,G. G. Brown Laboratory,42.285179448236676,83.74348437850195,G. G. Brown Laboratory
+89,Industrial and Operations Engineering Building,42.24147303358742,83.69966629406846,Industrial and Operations Engineering Building
+90,Lurie Biomedical Engineering Building,42.272323056239614,83.78078936532125,Lurie Biomedical Engineering Building
+91,Lurie Engineering Center,42.24041416958258,83.71267814552799,Lurie Engineering Center
+92,"Max Kade House, 627 Oxford Street",42.30310459244486,83.77292573891263,"Max Kade House, 627 Oxford Street"
+93,Naval Architecture and Marine Engineering Building,42.3102382096627,83.75758774312439,Naval Architecture and Marine Engineering Building
+94,North Campus Recreation Building,42.3041151573075,83.74022366020563,North Campus Recreation Building
+95,Phoenix Memorial Laboratory,42.30783816205849,83.76247387047799,Phoenix Memorial Laboratory
+96,Pierpont Commons (formerly North Campus Commons),42.27703545513361,83.7823863811474,Pierpont Commons (formerly North Campus Commons)
+97,"Earl V. Moore Building, School of Music",42.2832527530896,83.72416433591623,"Earl V. Moore Building, School of Music"
+98,Space Research Building,42.276281477697,83.77992254059974,Space Research Building
+99,Sterns Building,42.26529877644641,83.70410035016185,Sterns Building
+100,Medical Campus,42.29126521434044,83.78811196462115,Medical Campus
