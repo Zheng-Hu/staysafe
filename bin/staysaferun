@@ -5,9 +5,9 @@
 # See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
 set -Eeuo pipefail
 
-# 1. Call insta485db create if the datebase file does not exist
-echo "+ test -e var/insta485.sqlite3"
-test -e var/insta485.sqlite3
+# 1. Call staysafedb create if the datebase file does not exist
+echo "+ test -e var/staysafe.sqlite3"
+test -e var/staysafe.sqlite3
 
 # 2. Set FLASK_ENV and FLASK_APP environment variables
 echo "+ export FLASK_ENV=development"

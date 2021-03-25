@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/predict.css">
-<script type="text/javascript" src="javascript/predict.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css')}}">
 
 </head>
 <body>
@@ -15,13 +14,13 @@
 <form action="predict.html" method="post" enctype="multipart/form-data">
   <form>
     Time
-    <input class="center-block" type="datetime-local" name="name" class="question" id="nme" required autocomplete="off" />
+    <input class="center-block" type="datetime-local" name="name" class="question" id="Time" required autocomplete="off" />
    
     Building
     <br>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <div class="form__group">
-    <input type="text" class="form__input" id="location" placeholder="Building Name" required="" />
+    <input type="text" class="form__input" id="building" placeholder="Building Name" required="" />
     
   </div>
 
