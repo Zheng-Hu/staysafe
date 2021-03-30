@@ -20,28 +20,30 @@ def show_index():
     # specific: search a certain building FRONTEND-FIXME
     # if "specific" in request.form:
     if request.method == 'POST':    
-        form = flask.request.form['buildingname']
-        building_info = connection.execute("SELECT id, building_name "
+        # form = flask.request.form['buildingname']
+        cur_building_info = connection.execute("SELECT id, building_name "
                                             "FROM buildings WHERE building_name=?",
                                             (flask.request.form['building'],))
+        building_infos = cur_building_info.fetchone()
+
         # general: search a group of buildings FRONTEND-FIXME
         # if "general" in request.form:
         # will develop in beta release FIXME
-        time_info = connection.execute("SELECT cong_level "
+        cur_time_info = connection.execute("SELECT cong_level "
                                         "FROM congestion WHERE owner_id=? "
                                         "AND day_of_week=? "
                                         "AND time_period=?",
-                                        (building_info["id"],
+                                        (building_infos["id"],
                                         flask.request.form["day_of_week"],
                                         flask.request.form["time_period"],))
+        time_infos = cur_time_info.fetchone()
 
         # FRONTEND-FIXME: templates need to use the exactly same names to fetch the info
-        context = {"building_name": building_info["building_name"],
-                    "day_of_week": time_info["day_of_week"],
-                    "time_period": time_info["time_period"]}
+        context = {"building_name": building_infos,
+                    "day_of_week": time_infos["day_of_week"],
+                    "time_period": time_infos["time_period"]}
 
-        #print("show predict", file=sys.stdout)
-        return flask.render_template("predict.html")#, **context)
+        return flask.render_template("predict.html", **context)
     else:
         return flask.render_template("index.html")
     return flask.render_template("index.html")
@@ -66,7 +68,9 @@ def show_Predict():
                                             "FROM buildings WHERE building_name=?",
                                             (flask.request.form['building_name'],))
     # general: search a group of buildings FRONTEND-FIXME
-    # if "general" in request.form:
+    if "general" in request.form:
+        return flask.redirect(flask.url_for('https://dining.umich.edu/menus-locations/'))
+        
     # will develop in beta release FIXME
     time_info = connection.execute("SELECT cong_level "
                                     "FROM congestion WHERE owner_id=? "
