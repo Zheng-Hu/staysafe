@@ -1,8 +1,8 @@
-Angell Hall
-Alice Lloyd Hall
+lecture hall
+dormitory
 Alumni Memorial Hall (Art Museum)
 Burton Memorial Tower
-Business Administration
+administration
 Clarence Cook Little Building (CCLittle)
 Central Campus Recreation Building (CCRB)
 Chemistry Building (Chem)
