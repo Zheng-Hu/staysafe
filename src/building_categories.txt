@@ -4,10 +4,10 @@ recreation
 lecturehall,recreation
 administration
 research
-workout,sports,recreation
+workout,recreation
 lecturehall,chemistry
 dormitory
-sports,recreation
+recreation
 lecturehall, administration
 administration
 administration
@@ -15,12 +15,12 @@ lecturehall
 business,lecturehall
 lecturehall,coordination
 dormitory, dininghall
-Frieze Building
+lecturehall
 library
 lecturehall
 lecturehall,administration
 law,lecturehall
-workout,sports,recreation
+workout,recreation
 library
 healthcare
 recreation

@@ -15,7 +15,7 @@ Dental Building
 Executive Education
 East Hall
 East Quadrangle
-Frieze Building
+Tappan Hall
 Harlan Hatcher Graduate Library
 Hale Auditorium, School of Business Administration
 Haven Hall
@@ -54,7 +54,7 @@ School of Social Work Building
 South Hall (Law School)
 202 South Thayer Building
 Edward Henry Kraus Natural Science Building (NatSci)
-Tappan Hall
+Frieze Hall
 Tisch Hall
 Michigan Union
 Undergraduate Science Building (USB)
