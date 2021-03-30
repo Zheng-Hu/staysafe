@@ -1,65 +1,59 @@
-Angell Hall
-Alice Lloyd Hall
-Alumni Memorial Hall (Art Museum)
-Burton Memorial Tower
-Business Administration
-Clarence Cook Little Building (CCLittle)
-Central Campus Recreation Building (CCRB)
-Chemistry Building (Chem)
-Couzens Hall
-Crisler Arena
-Dana Building (School of Natural Resources & Environment, SNRE)
-Dance Building, 1310 N University Court
-William Davidson Hall
-David M. Dennison Building
-Dental Building
-Executive Education
-East Hall
-East Quadrangle
-Frieze Building
-Harlan Hatcher Graduate Library
-Hale Auditorium, School of Business Administration
-Haven Hall
-Hutchins Hall
-Intramural Building (IM Building)
-Institute for Social Research (ISR)
-Kresge Library
-Kellogg Eye Center
-Kelsey Museum of Archaeology (Newberry Hall)
-Kresge Hearing Research Institute
-Lane Hall
-Michigan League
-Law Library
-Lorch Hall
-Literature, Science, and the Arts Building (LSA Building)
-Life Sciences Institute (LSI)
-Mary Markley Hall
-Mason Hall
-Mental Health Research Institute (MHRI)
-Modern Languages Building (MLB)
-Mosher Jordan Hall
-North Hall
-North Ingalls Building
-Edward Henry Kraus Natural Science Building (NatSci)
-North University Building
-Palmer Commons
-Paton Accounting Center
-Power Center for the Performing Arts
-Horace H. Rackham School of Graduate Studies
-Randall Laboratory
-William D. Revelli Hall
-Stephen M. Ross Academic Center
-Ruthven Museums Building (Natural History Museum)
-Glenn E. Schembechler Hall
-School of Education Building
-Shapiro Undergraduate Library (UGLi)
-School of Nursing (North Ingalls Building)
+lecturehall
+dormitory
+recreation
+lecturehall,recreation
+administration
+research
+workout,recreation
+lecturehall,chemistry
+dormitory
+recreation
+lecturehall, administration
+administration
+administration
+lecturehall
+business,lecturehall
+lecturehall,coordination
+dormitory, dininghall
+lecturehall
+library
+lecturehall
+lecturehall,administration
+law,lecturehall
+workout,recreation
+library
+healthcare
+recreation
+research
+lecturehall
+administration
+law,library
+lecturehall
+lecturehall
+research
+dormitory
+lecturehall
+research
+lecturehall
+dormitory,dininghall
+lecturehall
+lecturehall
+dormitory,coordination
+lecturehall,coordination
+recreation,meetingrooms
+lecturehall
+lecturehall
+administration
+laboratory
+meetingrooms,laboratory
+library
+lecturehall
 Henry Vaughan Building, School of Public Health I
 Thomas Francis, Jr Building, School of Public Health II
 School of Social Work Building
 South Hall (Law School)
 202 South Thayer Building
-Stockwell Hall
+Edward Henry Kraus Natural Science Building (NatSci)
 Tappan Hall
 Tisch Hall
 Michigan Union

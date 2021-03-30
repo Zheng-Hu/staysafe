@@ -6,8 +6,8 @@ using Random
 #generate multiple data points
 #generate building categories
 
-#number of people we're generating
-n = 100
+#number of buildings we're generating
+n = 50
 #building names file. we could randomize these if necessary
 f = open("building_names.txt")
 #read lines into an array of strings
