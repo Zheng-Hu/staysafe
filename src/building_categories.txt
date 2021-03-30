@@ -35,7 +35,7 @@ dormitory
 lecturehall
 research
 lecturehall
-dormitory
+dormitory,dininghall
 lecturehall
 lecturehall
 dormitory,coordination
