@@ -4,9 +4,13 @@ URLs include:
 /
 """
 import flask
-from flask import session
+from flask import session #, request
 import arrow
 import staysafe
+import logging
+import sys
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('werkzeug')
 
 
 @staysafe.app.route('/', methods=['GET', 'POST'])
