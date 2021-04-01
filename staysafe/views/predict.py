@@ -13,7 +13,9 @@ import sys
 def show_prediction():
     connection = staysafe.model.get_db()
     if flask.request.method == 'POST':
-        if "building_name" in flask.request.form:
+        #print("result " + str(flask.request.form['mode'] == "building"), file=sys.stdout)
+        #sys.stdout.flush()
+        if flask.request.form['mode'] == "building":
             cur_building_info = connection.execute("SELECT id, building_name "
                                                 "FROM buildings WHERE building_name=?",
                                                 (flask.request.form['building'],))
@@ -62,7 +64,7 @@ def show_prediction():
             selected_time_period = flask.request.form["time"]
 
             # print("selected_cong_level:", selected_cong_level)
-            context = {"building_name": selected_name,
+            context = {"name": selected_name,
                     "day_of_week": selected_day_of_week,
                     "time_period": selected_time_period,
                     "cong_level": busy_level}
@@ -71,20 +73,20 @@ def show_prediction():
 
             return flask.render_template("predict.html", **context)
 
-        if "category" in flask.request.form:
+        if flask.request.form['mode'] == "category":
             selected_names_cong_levels = []
             cur_category_info = connection.execute("SELECT id, building_name, category "
                                                     "FROM buildings")
             id_name_category = cur_category_info.fetchall()
             for item in id_name_category:
-                if flask.request.form["category"] in item["category"]:
+                if flask.request.form["building"] in item["category"]:
                     cur_cong_level = connection.execute("SELECT cong_level "
                                                         "FROM congestion WHERE owner_id=? "
                                                         "AND day_of_week=? "
                                                         "AND time_period=?",
                                                         (item["id"],
-                                                        flask.request.form["day_of_week"],
-                                                        flask.request.form["time_period"],))
+                                                        flask.request.form["day"],
+                                                        flask.request.form["time"],))
                     selected_cong_level = cur_cong_level.fetchone()["cong_level"]
                     busy_level = ""
                     if (selected_cong_level < 0.25):
@@ -96,11 +98,13 @@ def show_prediction():
                     else:
                         busy_level = "usually busy"
                     selected_names_cong_levels.append({
-                        "building_name": item["building_name"],
+                        "name": item["building_name"],
                         "cong_level": busy_level
                     })
 
             context = {"buildings_info": selected_names_cong_levels,
-                        "day_of_week": flask.request.form["day_of_week"],
-                        "time_period": flask.request.form["time_period"]}
+                        "day_of_week": flask.request.form["day"],
+                        "time_period": flask.request.form["time"]}
             return flask.render_template("predict.html", **context)
+        else:
+            return flask.render_template("error.html")
