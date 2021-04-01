@@ -3,25 +3,40 @@
 <head>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css')}}">
 
-</head>
-<body>
-
-<div class="topnav">
-  <a class="active" href="/">StaySafe</a>
-</div>
 <style>
-  div.b {
-    text-align: left;
+  #content1 {
+      position: relative;
   }
-  </style>
+  #content1 img {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+  }
+  #content2 img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+  }
+</style>
+</head>
+
+<body>
 <form action="predict.html" method="post" enctype="multipart/form-data">
+  <div id="content1">
+    <a href="/">
+    <img src="/static/images/images.jpg" alt="Home" width="50" height="50"/>
+  </a>
+</div>
+<div id="content2">
+  <a href="/">
+  <img src="/static/images/logo.jpg" alt="logo">
+ </a>
+</div>
+<br>
   <form>
-
-<div class="b">
-Day
-
+    <i>Day</i>
     <br>
-    <select id="day" name="day" size="5">
+    <select id="day" name="day" size="3">
         <optgroup>
             <option value="1">Monday</option>
             <option value="2">Tuesday</option>
@@ -33,15 +48,17 @@ Day
         </optgroup>
     </select>
     <br>
+    <i>Time </i> 
     <br>
-    Time 
+    <br>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <div class="form__group">
         <input type="text" class="form__input" name = "time" id="time" placeholder="Time" required="" />
+        
     </div>
-    
-    Building
-    
+    <br>
+    <i>Building</i>
+    <br>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <div class="form__group">
         <input type="text" class="form__input" name = "building" id="building" placeholder="Building Name" required="" />
@@ -56,7 +73,6 @@ Day
         <span class="check-two"></span>
       </div>
     </div>
-  </div>
   </form>
 
 </form>
