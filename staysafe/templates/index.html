@@ -24,12 +24,12 @@
 
   <div id="content2">
     <a href = "/">
-    <img src="static/images/logo.jpg" alt="logo" />
+    <img src="{{ url_for('static', filename='images/logo.png')}}" alt="logo" />
     </a>
   </div>
   <div id="content1">
     <a href = "/">
-    <img src="static/images/images.jpg" alt="images" width = "50" height="50" />
+    <img src="{{ url_for('static', filename='images/images.png')}}" alt="images" width = "50" height="50" />
     </a>
   </div>
   
