@@ -2,42 +2,71 @@
 <html>
 <head>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css')}}">
+<style>
+   #content {
+        position: relative;
+    }
+    #content1 img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    #content2 img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
 
+    
+    </style>
 </head>
 <body>
 
-<div class="topnav">
-  <a class="active" href="/">StaySafe</a>
-</div>
+  <div id="content2">
+    <a href = "/">
+    <img src="static/images/logo.jpg" alt="logo" />
+    </a>
+  </div>
+  <div id="content1">
+    <a href = "/">
+    <img src="static/images/images.jpg" alt="images" width = "50" height="50" />
+    </a>
+  </div>
+  
+
+  
 
 
 <form action="predict.html" method="post" enctype="multipart/form-data">
   <form>
-    Searching Mode
-    <br>
-    <select id="mode" name="mode" size="3">
-        <optgroup>
-            <option value="category">Search by Category</option>
-            <option value="building">Search by Building Name</option>
-        </optgroup>
+ 
+<br>
+<small>Choose a Mode:</small>
+    <select name="mode" id="mode">
+      <optgroup>
+        <option value="category">Search by Category</option>
+        <option value="building">Search by Building Name</option>
+      </optgroup>
     </select>
     <br>
+    <br>
+    <small>Choose a Day:</small>
+    <select name="day" id="day">
+      <optgroup>
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+        <option value="4">Thursday</option>
+        <option value="5">Friday</option>
+        <option value="6">Saturday</option>
+        <option value="0">Sunday</option>
+      </optgroup>
+    </select>
 
-    Day of the week
-    <br>
-    <select id="day" name="day" size="3">
-        <optgroup>
-            <option value="1">Monday</option>
-            <option value="2">Tuesday</option>
-            <option value="3">Wednesday</option>
-            <option value="4">Thursday</option>
-            <option value="5">Friday</option>
-            <option value="6">Saturday</option>
-            <option value="0">Sunday</option>
-        </optgroup>
-    </select>
-    <br>
-    Time of the day 
+<br>
+
+  <br>
+    <small>Time of the day</small> 
     <br>
     <p style= "font-size: small;"> (Please input a value between 0 (00:00-00:59), 1, 2, ..., 22, 23 (23:00-23:59)) </p>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -45,7 +74,7 @@
         <input type="text" class="form__input" name = "time" id="time" placeholder="Time" style="width: 300px; text-align: center; margin-left: 550px;" required="" />
     </div>
     <br>
-    Building Name or Category 
+    <small>Building Name or Category </small>
     <p style= "font-size: small;"> (category: lecturehall, dormitory, recreation, administration, research, workout...) </p>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <div class="form__group">
