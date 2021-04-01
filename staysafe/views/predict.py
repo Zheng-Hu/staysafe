@@ -90,13 +90,11 @@ def show_prediction():
                     selected_cong_level = cur_cong_level.fetchone()["cong_level"]
                     busy_level = ""
                     if (selected_cong_level < 0.25):
-                        busy_level = "usually not busy"
-                    elif (selected_cong_level < 0.5):
-                        busy_level = "usually not too busy"
-                    elif (selected_cong_level < 0.75):
-                        busy_level = "usually a little busy"
+                        busy_level = "Free"
+                    elif (selected_cong_level < 0.4):
+                        busy_level = "Intermediate"
                     else:
-                        busy_level = "usually busy"
+                        busy_level = "Busy"
                     selected_names_cong_levels.append({
                         "name": item["building_name"],
                         "cong_level": busy_level
