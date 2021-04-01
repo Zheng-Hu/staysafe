@@ -20,6 +20,7 @@ $ deactivate
 Please install packages needed for running the webiste.
 ```
 pip install -r requirements.txt
+sudo apt-get install sqlite3
 ```
 
 ## Usage
