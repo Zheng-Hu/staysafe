@@ -64,12 +64,8 @@ CSV.write("congestion.csv", df2)
 #basically, each day has a "person quantity" from .75 to 1.25
 #which is spread via normal distributions
 #might wanna add more customization if you want?
-"""
-plotting stuff
 
 plot()
-plot(title = "Monday at 01",data[1,5:28],yrange=[.5,1.5],label = "Monday at Building#1",xlabel = "Hour",ylabel = "Congestion")
+plot(title = "Monday at 01",congestion[1:24,4],yrange=[0,1],label = "Monday at Building#1",xlabel = "Hour",ylabel = "Congestion")
 #plot!(title = "Tuesday at 01",data[1,29:52],yrange=[.5,1.5],label="Tuesday at Building#1")
-plot!(title = "Monday at 02",data[2,5:28],yrange=[.5,1.5],label = "Monday at Building#2")
-plot!(title = "Congestion Data Sample",data[1,29:52],yrange=[.5,1.5],label = "Tuesday at Building#2")
-"""
+plot!(title = "Congestion vs Time (testing)",congestion[25:48,4],yrange=[0,1],label = "Tuesday at Building#1")
