@@ -24,7 +24,7 @@ def show_prediction():
 
             if id_name is None:
                 return flask.render_template("error.html")
-                
+
             selected_id = id_name["id"]
             selected_name = id_name["building_name"]
 
@@ -45,6 +45,15 @@ def show_prediction():
             sys.stdout.flush()
 
             selected_cong_level = info["cong_level"]
+            busy_level = ""
+            if (selected_cong_level < 0.25):
+                busy_level = "usually not busy"
+            elif (selected_cong_level < 0.5):
+                busy_level = "usually not too busy"
+            elif (selected_cong_level < 0.75):
+                busy_level = "usually a little busy"
+            else:
+                busy_level = "usually busy"
             selected_day_of_week = flask.request.form["day"]
 
             #print(id_name, file=sys.stdout)
@@ -56,7 +65,7 @@ def show_prediction():
             context = {"building_name": selected_name,
                     "day_of_week": selected_day_of_week,
                     "time_period": selected_time_period,
-                    "cong_level": selected_cong_level}
+                    "cong_level": busy_level}
             print("result " + str(context), file=sys.stdout)
             sys.stdout.flush()
 
@@ -77,9 +86,18 @@ def show_prediction():
                                                         flask.request.form["day_of_week"],
                                                         flask.request.form["time_period"],))
                     selected_cong_level = cur_cong_level.fetchone()["cong_level"]
+                    busy_level = ""
+                    if (selected_cong_level < 0.25):
+                        busy_level = "usually not busy"
+                    elif (selected_cong_level < 0.5):
+                        busy_level = "usually not too busy"
+                    elif (selected_cong_level < 0.75):
+                        busy_level = "usually a little busy"
+                    else:
+                        busy_level = "usually busy"
                     selected_names_cong_levels.append({
                         "building_name": item["building_name"],
-                        "cong_level": selected_cong_level
+                        "cong_level": busy_level
                     })
 
             context = {"buildings_info": selected_names_cong_levels,
