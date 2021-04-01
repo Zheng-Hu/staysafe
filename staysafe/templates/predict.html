@@ -6,18 +6,26 @@
 <body>
 
 <div class="topnav">
-  <a class="active" href="/">StaySafe</a>
+  <a class="active" href="/">Home</a>
 </div>
 
 
 <div style="padding-top:10px">
 <img src="{{url_for('static', filename='images/DuderLibrary.jpg')}}"alt="Duderstadt Center (The Dude)", style="width:600px;height:400px;"> 
 </div>
-Note: The image acts as a placeholder for now
+<p style= "font-size: small;"> Note: The image acts as a placeholder for now </p>
 <div style="font-size: 27px">
-  <p>Building Name: {{building_name}}</p>
-  <p>Selected Time Period: {{time_period}}</p>
-  <p>Congestion Level: {{cong_level}}</p>
+  {% if buildings_info is defined %} 
+    {% for info in buildings_info %} 
+      <p>Building Name or Category Name: {{info['name']}}</p>
+      <p>Selected Time Period: {{time_period}}:00 - {{time_period}}:59</p>
+      <p>Congestion Level: {{info['cong_level']}}</p>
+    {% endfor %}
+  {% else %}
+    <p>Building Name or Category Name: {{name}}</p>
+    <p>Selected Time Period: {{time_period}}:00 - {{time_period}}:59</p>
+    <p>Congestion Level: {{cong_level}}</p>
+    {% endif %}
 </div>
  
 
