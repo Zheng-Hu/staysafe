@@ -27,6 +27,8 @@ Start the server by command
  ```
 (env) $ pwd
         /staysafe
+        chmod +x ./bin/staysafedb
+        chmod +x ./bin/staysaferun
 (env) $ ./bin/staysaferun
  ```
  Then you can navigate to http://localhost:8000 and see our webiste.
