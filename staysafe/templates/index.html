@@ -9,13 +9,19 @@
 <div class="topnav">
   <a class="active" href="/">StaySafe</a>
 </div>
-
-
+<style>
+  div.b {
+    text-align: left;
+  }
+  </style>
 <form action="predict.html" method="post" enctype="multipart/form-data">
   <form>
-    Time
+
+<div class="b">
+Day
+
     <br>
-    <select id="day" name="day" size="3">
+    <select id="day" name="day" size="5">
         <optgroup>
             <option value="1">Monday</option>
             <option value="2">Tuesday</option>
@@ -27,18 +33,15 @@
         </optgroup>
     </select>
     <br>
+    <br>
     Time 
-    <br>
-    (Please input a value between 0 (00:00-00:59), 1, 2, ..., 22, 23 (23:00-23:59))
-    <br>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <div class="form__group">
         <input type="text" class="form__input" name = "time" id="time" placeholder="Time" required="" />
-        
     </div>
-    <br>
+    
     Building
-    <br>
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <div class="form__group">
         <input type="text" class="form__input" name = "building" id="building" placeholder="Building Name" required="" />
@@ -53,6 +56,7 @@
         <span class="check-two"></span>
       </div>
     </div>
+  </div>
   </form>
 
 </form>
