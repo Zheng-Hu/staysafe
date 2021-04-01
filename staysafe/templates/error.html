@@ -2,15 +2,37 @@
 <html>
 <head>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css')}}">
+<style>
+  #content {
+       position: relative;
+   }
+   #content1 img {
+       position: absolute;
+       top: 0px;
+       right: 0px;
+   }
+   #content2 img {
+       position: absolute;
+       top: 0px;
+       left: 0px;
+   }
 
+   
+</style>
 </head>
 <body>
 
-<div class="topnav">
-  <a class="active" href="/">Home</a>
-</div>
-
-
+  <div id="content2">
+    <a href = "/">
+    <img src="static/images/logo.jpg" alt="logo" />
+    </a>
+  </div>
+  <div id="content1">
+    <a href = "/">
+    <img src="static/images/images.jpg" alt="images" width = "50" height="50" />
+    </a>
+  </div>
+<br>
 Sorry your search input is not valid:( <br> 
 Try giving me the full building name or category name
 </body>
