@@ -1,27 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css')}}">
 </head>
 <body>
+<style>
+    #content {
+        position: relative;
+    }
+    #content1 img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    #content2 img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-<div class="topnav">
-  <a class="active" href="/">Home</a>
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+
+<div id="content2">
+  <a href = "/">
+  <img src="static/images/logo.jpg" alt="logo" />
+  </a>
+</div>
+<div id="content1">
+  <a href = "/">
+  <img src="static/images/images.jpg" alt="images" width = "50" height="50" />
+  </a>
 </div>
 
+<br>
 
-<div style="padding-top:10px">
-<img src="{{url_for('static', filename='images/DuderLibrary.jpg')}}"alt="Duderstadt Center (The Dude)", style="width:600px;height:400px;"> 
-</div>
-<p style= "font-size: small;"> Note: The image acts as a placeholder for now </p>
-<div style="font-size: 27px">
-  {% if buildings_info is defined %} 
-    {% for info in buildings_info %} 
-      <p>Building Name or Category Name: {{info['name']}}</p>
-      <p>Selected Time Period: {{time_period}}:00 - {{time_period}}:59</p>
-      <p>Congestion Level: {{info['cong_level']}}</p>
+  {% if buildings_info is defined %}
+  <table border="1">
+    <tr>
+      <th>Building Name </th>
+      <th>Congestion Level</th>
+  </tr> 
+    {% for info in buildings_info %}
+    <tr>
+      <td>{{info['name']}}</td>
+   
+      <td>{{info['cong_level']}}</td>
+    </tr>  
     {% endfor %}
+  </table>
   {% else %}
+  <img src="{{url_for('static', filename='images/DuderLibrary.jpg')}}"alt="Duderstadt Center (The Dude)", style="width:600px;height:400px;"> 
+  </div>
+  <p style= "font-size: small;"> Note: The image acts as a placeholder for now </p>
+  <div style="font-size: 27px">
     <p>Building Name or Category Name: {{name}}</p>
     <p>Selected Time Period: {{time_period}}:00 - {{time_period}}:59</p>
     <p>Congestion Level: {{cong_level}}</p>
