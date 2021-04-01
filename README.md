@@ -23,12 +23,6 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-The website can be viewed through opening up the ‘index.html' file from the folder staysafe/templates in Google Chrome. 
-To try out the search function, you can type in 'duder library' in the building input.
-The website will negivate to a sample result page.
-
-The search function is still under construction, and therefore only the duder library sample can be viewed.
-
 Start the server by command
  ```
 (env) $ pwd
@@ -36,3 +30,4 @@ Start the server by command
 (env) $ ./bin/staysaferun
  ```
  Then you can navigate to http://localhost:8000 and see our webiste.
+ A precise name is needed to search its congestion level. For example, you need to type "Angell Hall" to search congestion levels in Angell Hall. Inputs like "Angell," "angell hall," are not support in this release.
