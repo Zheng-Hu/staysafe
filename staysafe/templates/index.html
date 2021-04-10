@@ -74,12 +74,30 @@
         <input type="text" class="form__input" name = "time" id="time" placeholder="Time" style="width: 300px; text-align: center; margin-left: 550px;" required="" />
     </div>
     <br>
-    <small>Building Name or Category </small>
+    <!-- <small>Building Name or Category </small>
     <p style= "font-size: small;"> (category: lecturehall, dormitory, recreation, administration, research, workout...) </p>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <div class="form__group">
         <input type="text" class="form__input" name = "building" id="building" placeholder="Building Name" style="width: 300px; text-align: center; margin-left: 550px;"  required="" />
-    </div>
+    </div> -->
+    <small>Building Name or Category </small>
+    <p style= "font-size: small;"> (category: lecturehall, dormitory, recreation, administration, research, workout...) </p>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <form action="/buildings" method="post" enctype="multipart/form-data">
+        <div class="wrapper">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" class="form__input" name = "building" id="building" placeholder="Building Name" style="width: 300px; text-align: center; margin-left: 550px;"  required="" />
+            <div class="autocom-box">
+            <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+        </div>
+
+        <script src="{{ url_for('static', filename='js/suggestions.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </form>
 
     <br>
     <button class="button">Search</button>
