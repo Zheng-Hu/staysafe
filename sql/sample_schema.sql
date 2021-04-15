@@ -6,6 +6,7 @@ CREATE TABLE buildings(
     longitude NUMERIC(18,15) NOT NULL, /* -180 to +180; 4-digit decimal should be enough? */
     latitude NUMERIC(17,14) NOT NULL, /* -90 to +90 */
     category VARCHAR(27) NOT NULL,
+    campus VARCHAR(27) NOT NULL,
     PRIMARY KEY(id)
 );
 
