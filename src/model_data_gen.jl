@@ -21,7 +21,7 @@ function model_data_gen(n = 100,num_days = 10)
         for j in 1:num_days
             #entangle across samples
             #each sample has some arbitrary change
-            #TODO: proximity based!!
+            #TODO: proximity based maybe?
             reti[:,:,j] = reali .+ randn()
         end
         #add small noise
