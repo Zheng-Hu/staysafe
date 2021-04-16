@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
   <style>
     @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
@@ -245,6 +246,7 @@ form {
       </select>
     </div>
 
+    
 
     <div class="form-group">
       <label id="name-label" for="name"> </label>
@@ -252,7 +254,11 @@ form {
         Input Building Name:
         <span class="clue">(Input with building name search mode)</span>
       </p>
-      <input
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <form action="/buildings" method="post" enctype="multipart/form-data">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input
         type="text"
         name="name"
         id="name"
@@ -260,8 +266,15 @@ form {
         placeholder="Enter Building name"
         required
       />
-    </div>
+            <div class="autocom-box"></div>
+            <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+        </div>
 
+        <script src="{{ url_for('static', filename='js/suggestions.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<div>
     <div class="form-group">
       <p>Choose the building place:
         <span class="clue">(Input to help find building name)</span>
