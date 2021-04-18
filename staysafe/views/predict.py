@@ -28,6 +28,7 @@ def show_prediction():
                 return flask.render_template("error.html")
 
             selected_id = id_name["id"]
+            print(selected_id)
             selected_name = id_name["building_name"]
 
             print("Day " + flask.request.form["day"], file=sys.stdout)
@@ -64,14 +65,16 @@ def show_prediction():
             selected_time_period = flask.request.form["time"]
 
             # print("selected_cong_level:", selected_cong_level)
-            context = {"name": selected_name,
+            context = {"id": str(selected_id) + '.jpg',
+                    "name": selected_name,
                     "day_of_week": selected_day_of_week,
                     "time_period": selected_time_period,
                     "cong_level": busy_level}
             print("result " + str(context), file=sys.stdout)
             sys.stdout.flush()
 
-            return flask.render_template("predict.html", **context)
+            return flask.render_template("predict.html", 
+                                            graph='static/images/' + str(selected_id) + '.jpg', **context)
 
         if flask.request.form['mode'] == "category":
             selected_names_cong_levels = []
