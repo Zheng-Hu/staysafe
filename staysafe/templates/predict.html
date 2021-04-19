@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css')}}">
 </head>
 <body>
+  <body style="background-color:rgb(255, 255, 255);"></body>
 <style>
     #content {
         position: relative;
@@ -64,9 +65,8 @@ tr:nth-child(even) {
     {% endfor %}
   </table>
   {% else %}
-  <img src="{{url_for('static', filename='images/DuderLibrary.jpg')}}"alt="Duderstadt Center (The Dude)", style="width:600px;height:400px;"> 
+  <img src="{{url_for('static', filename='images/' + id)}}"alt="Duderstadt Center (The Dude)", style="width:600px;height:400px;"> 
   </div>
-  <p style= "font-size: small;"> Note: The image acts as a placeholder for now </p>
   <div style="font-size: 27px">
     <p>Building Name or Category Name: {{name}}</p>
     <p>Selected Time Period: {{time_period}}:00 - {{time_period}}:59</p>

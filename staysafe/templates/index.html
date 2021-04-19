@@ -1,212 +1,216 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+<link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css')}}">
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
 :root {
-  --color-white: #f3f3f3;
-  --color-darkblue: #1b1b32;
-  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
-  --color-green: #37af65;
+--color-white: #f3f3f3;
+--color-darkblue: #1b1b32;
+--color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+--color-green: #37af65;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4;
-  color: var(--color-white);
-  margin: 0;
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.4;
+color: var(--color-white);
+margin: 0;
 }
 
 /* mobile friendly alternative to using background-attachment: fixed */
 body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  background: var(--color-darkblue);
-  background-image: linear-gradient(
-      115deg,
-      rgba(58, 58, 158, 0.8),
-      rgba(136, 136, 206, 0.7)
-    ),
-    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+content: '';
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+z-index: -1;
+background: var(--color-darkblue);
+background-image: linear-gradient(
+    115deg,
+    rgba(58, 58, 158, 0.8),
+    rgba(136, 136, 206, 0.7)
+  ),
+  url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 }
 
 h1 {
-  font-weight: 400;
-  line-height: 1.2;
+font-weight: 400;
+line-height: 1.2;
 }
 
 p {
-  font-size: 1.125rem;
+font-size: 1.125rem;
 }
 
 h1,
 p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+margin-top: 0;
+margin-bottom: 0.5rem;
 }
 
 label {
-  display: flex;
-  align-items: center;
-  font-size: 1.125rem;
-  margin-bottom: 0.5rem;
+display: flex;
+align-items: center;
+font-size: 1.125rem;
+margin-bottom: 0.5rem;
 }
 
 input,
 button,
 select,
 textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+margin: 0;
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
 }
 
 button {
-  border: none;
+border: none;
 }
 
 .container {
-  width: 100%;
-  margin: 3.125rem auto 0 auto;
+width: 100%;
+margin: 3.125rem auto 0 auto;
 }
 
 @media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
+.container {
+  max-width: 540px;
+}
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
+.container {
+  max-width: 720px;
+}
 }
 
 .header {
-  padding: 0 0.625rem;
-  margin-bottom: 1.875rem;
+padding: 0 0.625rem;
+margin-bottom: 1.875rem;
 }
 
 .description {
-  font-style: italic;
-  font-weight: 200;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+font-style: italic;
+font-weight: 200;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .clue {
-  margin-left: 0.25rem;
-  font-size: 0.9rem;
-  color: #e4e4e4;
+margin-left: 0.25rem;
+font-size: 0.9rem;
+color: #e4e4e4;
 }
 
 .text-center {
-  text-align: center;
+text-align: center;
 }
 
 /* form */
 
 form {
-  background: var(--color-darkblue-alpha);
-  padding: 2.5rem 0.625rem;
-  border-radius: 0.25rem;
+background: var(--color-darkblue-alpha);
+padding: 2.5rem 0.625rem;
+border-radius: 0.25rem;
 }
 
 @media (min-width: 480px) {
-  form {
-    padding: 2.5rem;
-  }
+form {
+  padding: 2.5rem;
+}
 }
 
 .form-group {
-  margin: 0 auto 1.25rem auto;
-  padding: 0.25rem;
+margin: 0 auto 1.25rem auto;
+padding: 0.25rem;
 }
 
 .form-control {
-  display: block;
-  width: 100%;
-  height: 2.375rem;
-  padding: 0.375rem 0.75rem;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+display: block;
+width: 100%;
+height: 2.375rem;
+padding: 0.375rem 0.75rem;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: 0.25rem;
+transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form-control:focus {
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+border-color: #80bdff;
+outline: 0;
+box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .input-radio,
 .input-checkbox {
-  display: inline-block;
-  margin-right: 0.625rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
+display: inline-block;
+margin-right: 0.625rem;
+min-height: 1.25rem;
+min-width: 1.25rem;
 }
 
 .input-textarea {
-  min-height: 120px;
-  width: 100%;
-  padding: 0.625rem;
-  resize: vertical;
+min-height: 120px;
+width: 100%;
+padding: 0.625rem;
+resize: vertical;
 }
 
 .submit-button {
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
-  background: var(--color-green);
-  color: inherit;
-  border-radius: 2px;
-  cursor: pointer;
+display: block;
+width: 100%;
+padding: 0.75rem;
+background: var(--color-green);
+color: inherit;
+border-radius: 2px;
+cursor: pointer;
 }
 
-  </style>
-</head>>
+</style>
+</head>
+<body>
 
-<div class="container">
+  <div class="form-group">
+  
+<form action="predict.html" method="post" enctype="multipart/form-data"><form>
   <header class="header">
     <h1 id="title" class="text-center">Staysafe</h1>
     <p id="description" class="description text-center">
     </p>
   </header>
-
-  
-  <form id="survey-form">
-    <div class="form-group">
-      <p>
-        Choose a Mode:
-      </p>
-      <select id="mode" name="mode" class="form-control" required>
-        <option disabled selected value>Select an option</option>
-        <option value="category">Search by Category</option>
-        <option value="building">Search by Building Name</option>
-      </select>
-    </div>
-
+ 
+<br>
+<div class="form-group">
+  <p>
+    Choose a Mode:
+  </p>
+  <select id="mode" name="mode" class="form-control" required>
+    <option disabled selected value>Select an option</option>
+    <option value="category">Search by Category</option>
+    <option value="building">Search by Building Name</option>
+  </select>
+</div>
+    <br>
+    <br>
     <div class="form-group">
       <p>
         Choose a Day:
@@ -222,159 +226,128 @@ form {
         <option value="0">Sunday</option>
       </select>
     </div>
-
+<br>
+  <br>
+  <div class="form-group">
+    <p>
+      Choose a Time:
+    </p>
+    <select id="time" name="time" class="form-control" required>
+      <option disabled selected value>Select an option</option>
+      <option value="0">0 AM - 1 AM </option>
+      <option value="1">1 AM - 2 AM</option>
+      <option value="2">3 AM - 4 AM</option>
+      <option value="3">5 AM - 6 AM</option>
+      <option value="4">7 AM - 8 AM</option>
+      <option value="5">9 AM - 10 AM</option>
+      <option value="6">11 AM - 12 AM</option>
+      <option value="7">1 PM - 2 PM</option>
+      <option value="8">3 PM - 4 PM</option>
+      <option value="9">5 PM - 6 PM</option>
+      <option value="10">7 PM - 8 PM</option>
+      <option value="11">9 PM - 10 PM</option>
+      <option value="12">11 PM - 12 PM</option>
+    </select>
+  </div>
+    <br>
+    
     <div class="form-group">
-      <p>
-        Choose a Time:
-      </p>
-      <select id="day" name="day" class="form-control" required>
-        <option disabled selected value>Select an option</option>
-        <option value="1">0 AM - 1 AM </option>
-        <option value="2">1 AM - 2 AM</option>
-        <option value="3">3 AM - 4 AM</option>
-        <option value="4">5 AM - 6 AM</option>
-        <option value="5">7 AM - 8 AM</option>
-        <option value="6">9 AM - 10 AM</option>
-        <option value="7">11 AM - 12 AM</option>
-        <option value="8">1 PM - 2 PM</option>
-        <option value="9">3 PM - 4 PM</option>
-        <option value="10">5 PM - 6 PM</option>
-        <option value="11">7 PM - 8 PM</option>
-        <option value="12">9 PM - 10 PM</option>
-        <option value="0">11 PM - 12 PM</option>
-      </select>
-    </div>
-
-
-    <div class="form-group">
-      <label id="name-label" for="name"> </label>
+      <label id="building"> </label>
       <p>
         Input Building Name:
         <span class="clue">(Input with building name search mode)</span>
       </p>
-      <input
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <form action="predict.html" method="post" enctype="multipart/form-data"><form>
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input
         type="text"
-        name="name"
-        id="name"
+        name="building"
+        id="building"
         class="form-control"
         placeholder="Enter Building name"
-        required
+  
       />
-    </div>
-
-    <div class="form-group">
-      <p>Choose the building place:
-        <span class="clue">(Input to help find building name)</span>
-      </p>
-      
-      <label>
-        <input
-          name="user-recommend"
-          value="North Campus"
-          type="radio"
-          class="input-radio"
-          checked
-        />North Campus </label
-      >
-      <label>
-        <input
-          name="user-recommend"
-          value="ourth Campus"
-          type="radio"
-          class="input-radio"
-        />Sourth Campus </label
-      >
-
-      <label>
-        <input
-          name="user-recommend"
-          value="West Campus"
-          type="radio"
-          class="input-radio"
-        />West Campus </label
-      >
-
-      <label>
-        <input
-          name="user-recommend"
-          value="East Campus"
-          type="radio"
-          class="input-radio"
-        />East Campus </label
-      >
-
-
-      <label
-        ><input
-          name="user-recommend"
-          value="Center Campus"
-          type="radio"
-          class="input-radio"
-        />Center Campus</label
-      >
-    </div>
-
+            <div class="autocom-box"></div>
+            <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+        </div>
+        <script src="{{ url_for('static', filename='js/suggestions.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<div>
+    <br>
 
     <div class="form-group">
       <p>
         Choose a category:
         <span class="clue">(Choose with catergory search mode)</span>
       </p>
-      
+      <form action="predict.html" method="post" enctype="multipart/form-data"><form></form>
       <label
         ><input
-          name="prefer"
+          name="building"
+          id="building"
           value="lecturehall"
           type="checkbox"
           class="input-checkbox"
-        />Lecturehall</label
+        />lecture hall</label
       >
       <label>
         <input
-          name="prefer"
+          name="building"
+          id="building"
           value="dormitory"
           type="checkbox"
           class="input-checkbox"
-        />Dormitory</label
+        />dormitory</label
       >
       <label
         ><input
-          name="prefer"
+          name="building"
+          id="building"
           value="recreation"
           type="checkbox"
           class="input-checkbox"
-        />Recreation</label
+        />recreation</label
       >
       <label
         ><input
-          name="prefer"
+          name="building"
+          id="building"
           value="administration"
           type="checkbox"
           class="input-checkbox"
-        />Administration</label
+        />administration</label
       >
       <label
         ><input
-          name="prefer"
+          name="building"
+          id="building"
           value="research"
           type="checkbox"
           class="input-checkbox"
-        />Research</label
+        />research</label
       >
       <label
         ><input
-          name="prefer"
+          name="building"
+          id="building"
           value="workout"
           type="checkbox"
           class="input-checkbox"
-        />Workout</label
+        />workout</label
       >
-      
-
-    <div class="form-group">
-      <button type="submit" id="submit" class="submit-button">
-        Search
-      </button>
+    <button class="button">Search</button>
+    <div class="loader">
+      <div class="check">
+        <span class="check-one"></span>
+        <span class="check-two"></span>
+      </div>
     </div>
   </form>
-</div>
+</form>
+<div>
+</body>
+</html>
