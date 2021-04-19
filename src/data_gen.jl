@@ -24,12 +24,12 @@ congestion_labels = ["owner_id","day_of_week", "time_period", "cong_level"]
 #less efficient since the markers are part of the data
 #but my understanding is that this is easier to pull
 #we could swap to n by 24*7 later potentially
-congestion = Array{Any}(missing,24*7*n*4,4)
+congestion = Array{Any}(missing,24*7*n,4)
 
 #number of people we're generating
 for i in 1:n
     #the first index in the congestion array (for this person)
-    first = (i-1)*24*7*4
+    first = (i-1)*24*7
     
     buildings[i,1] = i #ID
     buildings[i,2] = s[i] #NAME
@@ -38,13 +38,13 @@ for i in 1:n
     buildings[i,4] = 83.7430 + .1 * (rand() - .5) #LAT
     buildings[i,5] = s2[i] #CATEGORY
     
-    congestion[first+1:first+24*7*4,1] .= i
+    congestion[first+1:first+24*7,1] .= i
 
-    for j in 0:27
+    for j in 0:6
         local d = Normal(0,1 + 2*rand()) #random standard deviation, 1-3
         local lo,hi = -2,2 #standard deviations out
         local x = range(lo,hi;length=24) #make a range to shove the pdf onto
-        congestion[first+24*j+1:first+24*j+24,2] .= j % 7 
+        congestion[first+24*j+1:first+24*j+24,2] .= j
         congestion[first+24*j+1:first+24*j+24,3] = Array(1:24) 
         #create the normal dist. all of them are min 0 max 1
         #with different shapes potentially

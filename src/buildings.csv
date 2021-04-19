@@ -1,99 +1,99 @@
 id,building_name,longitude,latitude,category
-1,Angell Hall,42.26129351393252,83.74147646419331,lecturehall
-2,Alice Lloyd Hall,42.28553088758371,83.7225873567864,dormitory
-3,Alumni Memorial Hall (Art Museum),42.28112154929086,83.73653140934081,recreation
-4,Burton Memorial Tower,42.24437387727584,83.70224278675099,"lecturehall,recreation"
-5,Business Administration,42.30396135981942,83.78178874298604,administration
-6,1100 North University Ave. Building,42.238902883030825,83.70393284684731,research
-7,Central Campus Recreation Building (CCRB),42.27018014924809,83.7021125524878,"workout,recreation"
-8,Chemistry Building (Chem),42.27088608334476,83.74077216174452,"lecturehall,chemistry"
-9,Couzens Hall,42.30874157347671,83.74095035711782,dormitory
-10,Crisler Arena,42.254251841859,83.7068014732545,recreation
-11,"Dana Building (School of Natural Resources & Environment, SNRE)",42.2960847754334,83.75786045842713,"lecturehall, administration"
-12,"Dance Building, 1310 N University Court",42.23531688274484,83.73628921295052,administration
-13,Weiser Hall,42.24238110324848,83.7741032754572,administration
-14,Dental Building,42.31498778278166,83.76025614413099,lecturehall
-15,Executive Education,42.29646102604245,83.7481883323473,"business,lecturehall"
-16,East Hall,42.3209595990886,83.76874695575898,"lecturehall,coordination"
-17,East Quadrangle,42.255762630722195,83.74603816050252,"dormitory, dininghall"
-18,Tappan Hall,42.26204318002731,83.70619599626907,lecturehall
-19,Harlan Hatcher Graduate Library,42.28410313838871,83.78617727559876,library
-20,"Hale Auditorium, School of Business Administration",42.27245507436228,83.75909893752534,lecturehall
-21,Haven Hall,42.32537098697185,83.7856590958525,"lecturehall,administration"
-22,Hutchins Hall,42.25883095839814,83.71232864421272,"law,lecturehall"
-23,Intramural Building (IM Building),42.24896211257918,83.72230093588774,"workout,recreation"
-24,Kresge Library,42.29404602790645,83.79153863739106,library
-25,Kellogg Eye Center,42.308195402339535,83.7633895580143,healthcare
-26,Kelsey Museum of Archaeology (Newberry Hall),42.306740263465656,83.71168443068986,recreation
-27,Kresge Hearing Research Institute,42.247033312021706,83.73392571406451,research
-28,Lane Hall,42.25534537287877,83.73319143310644,lecturehall
-29,Michigan League,42.313616193637586,83.72524483441352,administration
-30,Law Library,42.32511940567261,83.74156623280771,"law,library"
-31,Lorch Hall,42.30936459116093,83.71581144965894,lecturehall
-32,"Literature, Science, and the Arts Building (LSA Building)",42.259468483729385,83.74573368639942,lecturehall
-33,Life Sciences Institute (LSI),42.290648590193896,83.77327716308062,research
-34,Mary Markley Hall,42.27822857395558,83.77597902035068,dormitory
-35,Mason Hall,42.291187891437865,83.76374175604933,lecturehall
-36,Mental Health Research Institute (MHRI),42.30762649019903,83.73873938627104,research
-37,Modern Languages Building (MLB),42.26414357149321,83.73913784754227,lecturehall
-38,Mosher Jordan Hall,42.31627315245612,83.78970101626615,"dormitory,dininghall"
-39,North Hall,42.320408003658116,83.74372134389968,lecturehall
-40,North Ingalls Building,42.26461438948894,83.75221477937255,lecturehall
-41,Stockwell Hall,42.25954410303536,83.72481970267093,"dormitory,coordination"
-42,North University Building,42.237734434358394,83.78310555178173,"lecturehall,coordination"
-43,Palmer Commons,42.25036866381987,83.70249661895777,"recreation,meetingrooms"
-44,Paton Accounting Center,42.250656156307414,83.76945770519289,lecturehall
-45,Power Center for the Performing Arts,42.27803564713072,83.69998310355282,lecturehall
-46,Horace H. Rackham School of Graduate Studies,42.315925978685414,83.70765884447302,administration
-47,Randall Laboratory,42.3164619668852,83.72160990098499,laboratory
-48,Stephen M. Ross Academic Center,42.2808993629911,83.76113306704502,"meetingrooms,laboratory"
-49,Shapiro Undergraduate Library (UGLi),42.311531855614696,83.71353587430607,library
-50,School of Nursing (North Ingalls Building),42.30576888648323,83.76339676136311,lecturehall
-51,"Henry Vaughan Building, School of Public Health I",42.330247934174146,83.70093077261058,lecturehall
-52,"Thomas Francis, Jr Building, School of Public Health II",42.25420912953401,83.70798869756743,lecturehall
-53,School of Social Work Building,42.307174312586916,83.71635276403858,lecturehall
-54,South Hall (Law School),42.28693716018878,83.69586688088837,"law,lecturehall"
-55,202 South Thayer Building,42.29266625688374,83.74115910369083,"lecturehall,administration"
-56,Edward Henry Kraus Natural Science Building (NatSci),42.231331418858424,83.73559744278653,"lecturehall,administration"
-57,Michigan Union,42.28841716115725,83.74320400616502,administration
-58,Undergraduate Science Building (USB),42.2606166176961,83.70061312078299,"administration,meetingrooms"
-59,"University Towers, 1225 South University",42.30254267396232,83.72062170244624,dormitory
-60,Joan and Sanford Weill Hall,42.27593936593508,83.7411312518506,administration
-61,West Hall,42.270748149271746,83.72779242220949,"workout,dormitory,dininghall"
-62,Art and Architecture Building,42.28849186855211,83.69953701414096,"administration,lecturehall,north"
-63,Walter E. Lay Automotive Lab,42.32105143255444,83.7338059208512,"laboratory,north"
-64,"Blanch Anderson Moore Hall, School of Music",42.3127425851454,83.7402761907644,"administration,lecturehall,north"
-65,Bursley Hall,42.26333899417628,83.75559915409345,"meetingrooms,dormitory,dininghall,north"
-66,"Charles R. Walgreen, Jr. Drama Center",42.32375333957092,83.7600668687611,"meetingrooms,north"
-67,Chrysler Center,42.29356265658278,83.7392234572952,"lecturehall,meetingrooms,north"
-68,Cooley Building,42.23238572104649,83.75469365001487,"laboratory,north"
-69,Bob and Betty Beyster Building,42.26105744454748,83.753904717559,"lecturehall,administration,north"
-70,Dow Engineering Building,42.232531267106104,83.75271987599017,"laboratory,lecturehall,administration,north"
-71,Duderstadt Center (The Dude),42.2757857454407,83.73987669862036,"meetingrooms,north"
-72,Electrical Engineering and Computer Science Building (EECS),42.31215827667637,83.72696778560464,"laboratory,administration,lecturehall,meetingrooms,north"
-73,Environmental & Water Resources Engineering Building,42.31524788738997,83.77056321780948,"laboratory,lecturehall,administration,north"
-74,Ford Library,42.252140449123594,83.7357641458013,"library,north"
-75,Francois-Xavier Bagnoud Building,42.30699909658146,83.70922745859681,"lecturehall,administration,north"
-76,G. G. Brown Laboratory,42.30700425664555,83.73226010665937,"laboratory,north"
-77,Industrial and Operations Engineering Building,42.30679697529051,83.69338540227017,"laboratory,administration,lecturehall,north"
-78,Lurie Biomedical Engineering Building,42.27255883163715,83.69554441072235,"lecturehall,administration,north"
-79,Lurie Engineering Center,42.30991023960955,83.75644771255033,"meetingrooms,north"
-80,"Max Kade House, 627 Oxford Street",42.293324902566994,83.78600692278849,"lecturehall,administration,north"
-81,Naval Architecture and Marine Engineering Building,42.29803417157086,83.74089247786736,"lecturehall,administration,north"
-82,North Campus Recreation Building,42.237948011769994,83.69900920461974,"recreation,north"
-83,Phoenix Memorial Laboratory,42.24854712651081,83.70550783893275,"laboratory,north"
-84,Pierpont Commons (formerly North Campus Commons),42.23651644752734,83.72711672554286,"recreation,meetingrooms,north"
-85,"Earl V. Moore Building, School of Music",42.25699836291247,83.72980966600831,"administration,lecturehall,north"
-86,Space Research Building,42.24697049223856,83.71119969653523,"research,north"
-87,Sterns Building,42.32769905598292,83.71007742956438,"administration,north"
-88,Children's Psychiatric Hospital (CPH),42.24746517154761,83.75041318063143,"hospital,medical"
-89,C. S. Mott Children's Hospital,42.271005899618736,83.76211225319138,"hospital,medical"
-90,"Medical Science Buildings, Building I",42.31954803217305,83.70036575810276,"lecturehall,administration,medical"
-91,"Medical Science, Building II",42.23591986990013,83.74618887155155,"lecturehall,administration,medical"
-92,"Medical Science Research, Building III",42.233572378769,83.75481683989784,"research,medical"
-93,Women's Hospital,42.29750482771273,83.70980501198622,"hospital,medical"
-94,Simpson Memorial Institute,42.3053232427995,83.7798418825027,"research,medical"
-95,Brehm Tower,42.30223594195522,83.74359707766934,"research,medical"
-96,Administrative Services Building,42.3016508288413,83.6994307329716,"administration,athletic_campus"
-97,Boyer Building,42.27735168470307,83.77617530815323,"lecturehall,meetingrooms,athletic_campus"
-98,Buhr Library,42.23425560560662,83.7778024921363,"library,athletic_campus"
+1,Angell Hall,42.27587668739916,83.74560454848013,lecturehall
+2,Alice Lloyd Hall,42.301537035752176,83.69548889278431,dormitory
+3,Alumni Memorial Hall (Art Museum),42.25850257012312,83.71349622624716,recreation
+4,Burton Memorial Tower,42.28892227108914,83.77310571935449,"lecturehall,recreation"
+5,Business Administration,42.24295353573333,83.75199899149938,administration
+6,1100 North University Ave. Building,42.311661478107204,83.70714276105865,research
+7,Central Campus Recreation Building (CCRB),42.266670111413404,83.70059327469643,"workout,recreation"
+8,Chemistry Building (Chem),42.286694864456045,83.72908762638873,"lecturehall,chemistry"
+9,Couzens Hall,42.243826858512435,83.75595558742123,dormitory
+10,Crisler Arena,42.280395086587674,83.78459097642242,recreation
+11,"Dana Building (School of Natural Resources & Environment, SNRE)",42.26332485023609,83.7862633406494,"lecturehall, administration"
+12,"Dance Building, 1310 N University Court",42.31597677755903,83.7440816787748,administration
+13,Weiser Hall,42.23656561797479,83.72445162835088,administration
+14,Dental Building,42.23297751558872,83.78622512303721,lecturehall
+15,Executive Education,42.322136243755736,83.78470811870454,"business,lecturehall"
+16,East Hall,42.3053439605758,83.70618617529195,"lecturehall,coordination"
+17,East Quadrangle,42.30199322818573,83.74186576000837,"dormitory, dininghall"
+18,Tappan Hall,42.24728799436135,83.7632583969059,lecturehall
+19,Harlan Hatcher Graduate Library,42.30772855010003,83.71472425141702,library
+20,"Hale Auditorium, School of Business Administration",42.23526026582891,83.70712423264676,lecturehall
+21,Haven Hall,42.27943567310264,83.74610171291779,"lecturehall,administration"
+22,Hutchins Hall,42.27401868922158,83.69868570377734,"law,lecturehall"
+23,Intramural Building (IM Building),42.32328040011084,83.70650263711147,"workout,recreation"
+24,Kresge Library,42.25684311159083,83.70556503828483,library
+25,Kellogg Eye Center,42.269466725868455,83.75622948000321,healthcare
+26,Kelsey Museum of Archaeology (Newberry Hall),42.301656499053585,83.72317140532648,recreation
+27,Kresge Hearing Research Institute,42.245222244204285,83.74235740732573,research
+28,Lane Hall,42.295157441147154,83.70143988118078,lecturehall
+29,Michigan League,42.26420000797804,83.70706843895366,administration
+30,Law Library,42.2587476441412,83.77030711466024,"law,library"
+31,Lorch Hall,42.24727765548632,83.73376129540304,lecturehall
+32,"Literature, Science, and the Arts Building (LSA Building)",42.31699343962972,83.72343627953714,lecturehall
+33,Life Sciences Institute (LSI),42.27921633883218,83.78098112431763,research
+34,Mary Markley Hall,42.28513778927748,83.73752714399174,dormitory
+35,Mason Hall,42.2871383628078,83.77115166128425,lecturehall
+36,Mental Health Research Institute (MHRI),42.3103729905482,83.72865058898843,research
+37,Modern Languages Building (MLB),42.245340736569496,83.77916423695645,lecturehall
+38,Mosher Jordan Hall,42.23152770025441,83.77458391063497,"dormitory,dininghall"
+39,North Hall,42.31614789750126,83.78500165623696,lecturehall
+40,North Ingalls Building,42.24038435775181,83.78124436400489,lecturehall
+41,Stockwell Hall,42.26927185468675,83.74514152143396,"dormitory,coordination"
+42,North University Building,42.23128559243213,83.71078860367395,"lecturehall,coordination"
+43,Palmer Commons,42.26544041524389,83.79153070397246,"recreation,meetingrooms"
+44,Paton Accounting Center,42.268949647589835,83.72767739644675,lecturehall
+45,Power Center for the Performing Arts,42.29812814589409,83.71903103495495,lecturehall
+46,Horace H. Rackham School of Graduate Studies,42.31837913521093,83.71127433679386,administration
+47,Randall Laboratory,42.25385295329803,83.78794339396845,laboratory
+48,Stephen M. Ross Academic Center,42.258821111946794,83.74359577564599,"meetingrooms,laboratory"
+49,Shapiro Undergraduate Library (UGLi),42.30741975088377,83.77294192114823,library
+50,School of Nursing (North Ingalls Building),42.2653892064121,83.77501022179442,lecturehall
+51,"Henry Vaughan Building, School of Public Health I",42.31017966313903,83.69912113356712,lecturehall
+52,"Thomas Francis, Jr Building, School of Public Health II",42.32530221950376,83.70606235323342,lecturehall
+53,School of Social Work Building,42.286196477999106,83.79015158737592,lecturehall
+54,South Hall (Law School),42.26646371013963,83.70692432610518,"law,lecturehall"
+55,202 South Thayer Building,42.23330360517097,83.7216053555104,"lecturehall,administration"
+56,Edward Henry Kraus Natural Science Building (NatSci),42.291219070591886,83.71015156557192,"lecturehall,administration"
+57,Michigan Union,42.239113542719,83.71181174357493,administration
+58,Undergraduate Science Building (USB),42.283078483471854,83.70325636321225,"administration,meetingrooms"
+59,"University Towers, 1225 South University",42.310828702546495,83.72876193586004,dormitory
+60,Joan and Sanford Weill Hall,42.24630372964912,83.76654204440814,administration
+61,West Hall,42.32451553975114,83.76244331145314,"workout,dormitory,dininghall"
+62,Art and Architecture Building,42.29449086740112,83.77718842049937,"administration,lecturehall,north"
+63,Walter E. Lay Automotive Lab,42.27049511177322,83.72108016390406,"laboratory,north"
+64,"Blanch Anderson Moore Hall, School of Music",42.27577559593826,83.69503781276804,"administration,lecturehall,north"
+65,Bursley Hall,42.27448169276708,83.77747279988503,"meetingrooms,dormitory,dininghall,north"
+66,"Charles R. Walgreen, Jr. Drama Center",42.30558036376253,83.69610443084056,"meetingrooms,north"
+67,Chrysler Center,42.326391335412474,83.69904123995553,"lecturehall,meetingrooms,north"
+68,Cooley Building,42.238132589129144,83.72320315229626,"laboratory,north"
+69,Bob and Betty Beyster Building,42.272449958834024,83.72566521410945,"lecturehall,administration,north"
+70,Dow Engineering Building,42.23508318572553,83.73030188588385,"laboratory,lecturehall,administration,north"
+71,Duderstadt Center (The Dude),42.26651286791409,83.70744992898312,"meetingrooms,north"
+72,Electrical Engineering and Computer Science Building (EECS),42.28690392852636,83.73144765476806,"laboratory,administration,lecturehall,meetingrooms,north"
+73,Environmental & Water Resources Engineering Building,42.32053234381173,83.72559055050989,"laboratory,lecturehall,administration,north"
+74,Ford Library,42.296229673797775,83.7392283760511,"library,north"
+75,Francois-Xavier Bagnoud Building,42.30966740526598,83.74564096143469,"lecturehall,administration,north"
+76,G. G. Brown Laboratory,42.266731256002096,83.7561990672219,"laboratory,north"
+77,Industrial and Operations Engineering Building,42.23661323694515,83.72093845757401,"laboratory,administration,lecturehall,north"
+78,Lurie Biomedical Engineering Building,42.33004391854333,83.7633297554094,"lecturehall,administration,north"
+79,Lurie Engineering Center,42.26934344976076,83.7907595423213,"meetingrooms,north"
+80,"Max Kade House, 627 Oxford Street",42.30003825369913,83.76132620854484,"lecturehall,administration,north"
+81,Naval Architecture and Marine Engineering Building,42.27095096606613,83.7745589583099,"lecturehall,administration,north"
+82,North Campus Recreation Building,42.2341833836683,83.79138965931581,"recreation,north"
+83,Phoenix Memorial Laboratory,42.24889085875316,83.69326341063316,"laboratory,north"
+84,Pierpont Commons (formerly North Campus Commons),42.24938830695759,83.74881913198853,"recreation,meetingrooms,north"
+85,"Earl V. Moore Building, School of Music",42.26154738607433,83.7107145072224,"administration,lecturehall,north"
+86,Space Research Building,42.23449107732416,83.75308715159518,"research,north"
+87,Sterns Building,42.30272654049559,83.75789193115644,"administration,north"
+88,Children's Psychiatric Hospital (CPH),42.313243961389304,83.73862815906944,"hospital,medical"
+89,C. S. Mott Children's Hospital,42.24927810574739,83.74130921997086,"hospital,medical"
+90,"Medical Science Buildings, Building I",42.247758714142115,83.77540139426574,"lecturehall,administration,medical"
+91,"Medical Science, Building II",42.25766657698715,83.74092997579201,"lecturehall,administration,medical"
+92,"Medical Science Research, Building III",42.232576166511635,83.71907043497842,"research,medical"
+93,Women's Hospital,42.281323190185354,83.70982398917944,"hospital,medical"
+94,Simpson Memorial Institute,42.25381668143005,83.76408190305516,"research,medical"
+95,Brehm Tower,42.257443857265095,83.72095234419945,"research,medical"
+96,Administrative Services Building,42.29377312182514,83.76032522697795,"administration,athletic_campus"
+97,Boyer Building,42.28315690424763,83.70341082758785,"lecturehall,meetingrooms,athletic_campus"
+98,Buhr Library,42.292516713833756,83.71709716143037,"library,athletic_campus"

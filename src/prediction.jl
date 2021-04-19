@@ -15,6 +15,7 @@ function predict()
     conv1 = x -> conv(x,cfilter1,pad=1)
     conv2 = x -> conv(x,cfilter2,pad=1)
     
+    res = x -> reshape(x,)
     #the output of the conv2 layer will be a 5D tensor, 24 x 7 x (num days) x 1 x 81. We need to get that into something workable.
     #and we need to simplify numdays x 81 to a single congestion metric.
     #todo: combine
