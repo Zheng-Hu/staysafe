@@ -1,4 +1,5 @@
 """StaySafe model (database) API."""
+"""Adapted from UM EECS 485 Fall 2020 Insta485 API"""
 import sqlite3
 import flask
 import staysafe
