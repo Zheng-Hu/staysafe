@@ -12,8 +12,8 @@ function model_data_gen(n = 100,num_days = 10)
     #z-proximity is relevant if we assume that the days are in chronological order
     
     for i in 1:n
-        reti = Array{Float32}(24,7,num_days)
-        reali = Array{Float32}(24,7)
+        reti = Array{Float32}(undef,24,7,num_days)
+        reali = Array{Float32}(undef,24,7)
         #TOOO: entangle across days and hrs in starting init
         #need proximity based bleed 
         #(assumed trends over time -> similarity based on close timescale)
