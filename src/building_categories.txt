@@ -48,78 +48,51 @@ laboratory
 meetingrooms,laboratory
 library
 lecturehall
-Henry Vaughan Building, School of Public Health I
-Thomas Francis, Jr Building, School of Public Health II
-School of Social Work Building
-South Hall (Law School)
-202 South Thayer Building
-Edward Henry Kraus Natural Science Building (NatSci)
-Tappan Hall
-Tisch Hall
-Michigan Union
-Undergraduate Science Building (USB)
-University Towers, 1225 South University
-Joan and Sanford Weill Hall
-West Hall
-North Campus
-Art and Architecture Building
-Walter E. Lay Automotive Lab
-Blanch Anderson Moore Hall, School of Music
-Bursley Hall
-Charles R. Walgreen, Jr. Drama Center
-Chrysler Center
-Cooley Building
-Computer Science and Engineering Building
-Dow Engineering Building
-Duderstadt Center (The Dude)
-Electrical Engineering and Computer Science Building (EECS)
-Engineering Program Building
-Engineering Research Building 1
-Engineering Research Building 2
-Environmental & Water Resources Engineering Building
-Ford Library
-Francois-Xavier Bagnoud Building
-G. G. Brown Laboratory
-Industrial and Operations Engineering Building
-Lurie Biomedical Engineering Building
-Lurie Engineering Center
-Max Kade House, 627 Oxford Street
-Naval Architecture and Marine Engineering Building
-North Campus Recreation Building
-Phoenix Memorial Laboratory
-Pierpont Commons (formerly North Campus Commons)
-Earl V. Moore Building, School of Music
-Space Research Building
-Sterns Building
-Medical Campus
-Children's Psychiatric Hospital (CPH)
-C. S. Mott Children's Hospital
-Medical Science Buildings, Building I
-Medical Science, Building II
-Medical Science Research, Building III
-Women's Hospital
-Simpson Memorial Institute
-Brehm Tower
-Athletic Campus
-Administrative Services Building
-Boyer Building
-Buhr Library
-Off Campus
-Inglis House
-Biological Station, Pellston, Michigan
-Camp Davis, Jackson Hole, Wyoming
-Fresh Air Camp, Pinckney
-Argus Building II, Television Center, 408 S. Fourth Street
-Argus Building III, 416 S. Fourth Street
-Public Policy Annex, 1015 E. Huron
-Matthaei Botanical Gardens, Dixboro Road
-Commerce Park Dearborn
-Monroe County Health Department
-Northville State Hospital
-Track & Tennis Building
-Wolverine Tower
-Demolished Buildings
-Frieze Building
-Waterman Gym
-Morris Hall
-Old Library
+lecturehall
+lecturehall
+lecturehall
+law,lecturehall
+lecturehall,administration
+lecturehall,administration
+administration
+administration,meetingrooms
+dormitory
+administration
+workout,dormitory,dininghall
+administration,lecturehall,north
+laboratory,north
+administration,lecturehall,north
+meetingrooms,dormitory,dininghall,north
+meetingrooms,north
+lecturehall,meetingrooms,north
+laboratory,north
+lecturehall,administration,north
+laboratory,lecturehall,administration,north
+meetingrooms,north
+laboratory,administration,lecturehall,meetingrooms,north
+laboratory,lecturehall,administration,north
+library,north
+lecturehall,administration,north
+laboratory,north
+laboratory,administration,lecturehall,north
+lecturehall,administration,north
+meetingrooms,north
+lecturehall,administration,north
+lecturehall,administration,north
+recreation,north
+laboratory,north
+recreation,meetingrooms,north
+administration,lecturehall,north
+research,north
+administration,north
+hospital,medical
+hospital,medical
+lecturehall,administration,medical
+lecturehall,administration,medical
+research,medical
+hospital,medical
+research,medical
+research,medical
+administration,athletic_campus
+lecturehall,meetingrooms,athletic_campus
+library,athletic_campus

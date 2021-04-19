@@ -1,7 +1,7 @@
 using Flux: ADAM, gradient, glorot_uniform, conv, train!, Chain, params, mse
 using Flux.Optimise: update!
 #trains and utilizes a prediction model to output congestion metrics
-function predict(filter_size)
+function predict()
 
 
     data,real = model_data_gen()

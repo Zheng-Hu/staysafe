@@ -7,7 +7,7 @@ using Random
 #generate building categories
 
 #number of buildings we're generating
-n = 50
+n = 98
 #building names file. we could randomize these if necessary
 f = open("building_names.txt")
 #read lines into an array of strings
@@ -65,7 +65,7 @@ CSV.write("congestion.csv", df2)
 #which is spread via normal distributions
 #might wanna add more customization if you want?
 
-plot()
-plot(title = "Monday at 01",congestion[1:24,4],yrange=[0,1],label = "Monday at Building#1",xlabel = "Hour",ylabel = "Congestion")
+#plot()
+#plot(title = "Monday at 01",congestion[1:24,4],yrange=[0,1],label = "Monday at Building#1",xlabel = "Hour",ylabel = "Congestion")
 #plot!(title = "Tuesday at 01",data[1,29:52],yrange=[.5,1.5],label="Tuesday at Building#1")
-plot!(title = "Congestion vs Time (testing)",congestion[25:48,4],yrange=[0,1],label = "Tuesday at Building#1")
+#plot!(title = "Congestion vs Time (testing)",congestion[25:48,4],yrange=[0,1],label = "Tuesday at Building#1")
