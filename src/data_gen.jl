@@ -26,6 +26,12 @@ congestion_labels = ["owner_id","day_of_week", "time_period", "cong_level"]
 #we could swap to n by 24*7 later potentially
 congestion = Array{Any}(missing,24*7*n,4)
 
+predicted_data = predict()
+predicted_data = (predicted_data .- minimum(predicted_data))
+predicted_data ./= maximum(predicted_data)
+
+congestion[:,4] .= predicted_data[:]
+
 #number of people we're generating
 for i in 1:n
     #the first index in the congestion array (for this person)
@@ -48,7 +54,8 @@ for i in 1:n
         congestion[first+24*j+1:first+24*j+24,3] = Array(1:24) 
         #create the normal dist. all of them are min 0 max 1
         #with different shapes potentially
-        congestion[first+24*j+1:first+24*j+24,4] = (pdf.(d,x) * (.75+.5 * rand()) / mean(pdf.(d,x)).-0.1754461039615053)/2 #0 to 1
+        #congestion[first+24*j+1:first+24*j+24,4] = (pdf.(d,x) * (.75+.5 * rand()) / mean(pdf.(d,x)).-0.1754461039615053)/2 #0 to 1
+
     end
 end
 
