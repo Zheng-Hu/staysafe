@@ -1,3 +1,4 @@
+<!-- Mainly developed by ZH and JD; Adapted by QX -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -234,19 +235,30 @@ cursor: pointer;
     </p>
     <select id="time" name="time" class="form-control" required>
       <option disabled selected value>Select an option</option>
-      <option value="0">0 AM - 1 AM </option>
-      <option value="1">1 AM - 2 AM</option>
-      <option value="2">3 AM - 4 AM</option>
-      <option value="3">5 AM - 6 AM</option>
-      <option value="4">7 AM - 8 AM</option>
-      <option value="5">9 AM - 10 AM</option>
-      <option value="6">11 AM - 12 AM</option>
-      <option value="7">1 PM - 2 PM</option>
-      <option value="8">3 PM - 4 PM</option>
-      <option value="9">5 PM - 6 PM</option>
-      <option value="10">7 PM - 8 PM</option>
-      <option value="11">9 PM - 10 PM</option>
-      <option value="12">11 PM - 12 PM</option>
+      <option value="1">0 AM - 1 AM </option>
+      <option value="2">1 AM - 2 AM</option>
+      <option value="3">2 AM - 3 AM</option>
+      <option value="4">3 AM - 4 AM</option>
+      <option value="5">4 AM - 5 AM</option>
+      <option value="6">5 AM - 6 AM</option>
+      <option value="7">6 AM - 7 AM</option>
+      <option value="8">7 AM - 8 AM</option>
+      <option value="9">8 AM - 9 AM</option>
+      <option value="10">9 AM - 10 AM</option>
+      <option value="11">10 AM - 11 AM</option>
+      <option value="12">11 AM - 12 PM</option>
+      <option value="13">12 PM - 1 PM</option>
+      <option value="14">1 PM - 2 PM</option>
+      <option value="15">2 PM - 3 PM</option>
+      <option value="16">3 PM - 4 PM</option>
+      <option value="17">4 PM - 5 PM</option>
+      <option value="18">5 PM - 6 PM</option>
+      <option value="19">6 PM - 7 PM</option>
+      <option value="20">7 PM - 8 PM</option>
+      <option value="21">8 PM - 9 PM</option>
+      <option value="22">9 PM - 10 PM</option>
+      <option value="23">10 PM - 11 PM</option>
+      <option value="24">11 PM - 12 AM</option>
     </select>
   </div>
     <br>
@@ -280,6 +292,7 @@ cursor: pointer;
     <br>
 
     <div class="form-group">
+      <label id="category"> </label>
       <p>
         Choose a category:
         <span class="clue">(Choose with catergory search mode)</span>
@@ -287,57 +300,57 @@ cursor: pointer;
       <form action="predict.html" method="post" enctype="multipart/form-data"><form></form>
       <label
         ><input
-          name="building"
-          id="building"
+          name="category"
+          id="category"
           value="lecturehall"
           type="checkbox"
           class="input-checkbox"
-        />lecture hall</label
+        />Lecture Hall</label
       >
       <label>
         <input
-          name="building"
-          id="building"
+          name="category"
+          id="category"
           value="dormitory"
           type="checkbox"
           class="input-checkbox"
-        />dormitory</label
+        />Dormitory</label
       >
       <label
         ><input
-          name="building"
-          id="building"
+          name="category"
+          id="category"
           value="recreation"
           type="checkbox"
           class="input-checkbox"
-        />recreation</label
+        />Recreation</label
       >
       <label
         ><input
-          name="building"
-          id="building"
+          name="category"
+          id="category"
           value="administration"
           type="checkbox"
           class="input-checkbox"
-        />administration</label
+        />Administration</label
       >
       <label
         ><input
-          name="building"
-          id="building"
+          name="category"
+          id="category"
           value="research"
           type="checkbox"
           class="input-checkbox"
-        />research</label
+        />Research</label
       >
       <label
         ><input
-          name="building"
-          id="building"
+          name="category"
+          id="category"
           value="workout"
           type="checkbox"
           class="input-checkbox"
-        />workout</label
+        />Workout</label
       >
     <button class="button">Search</button>
     <div class="loader">

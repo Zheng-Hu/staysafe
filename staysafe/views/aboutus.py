@@ -1,5 +1,6 @@
 """
 StaySafe index view.
+Mainly developed by QX
 URLs include:
 /aboutus/
 """

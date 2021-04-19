@@ -55,12 +55,15 @@ tr:nth-child(even) {
     <tr>
       <th>Building Name </th>
       <th>Congestion Level</th>
+      <th>Location</th>
   </tr> 
     {% for info in buildings_info %}
     <tr>
       <td>{{info['name']}}</td>
    
       <td>{{info['cong_level']}}</td>
+
+      <td>{{info['campus']}}</td>
     </tr>  
     {% endfor %}
   </table>
@@ -68,7 +71,8 @@ tr:nth-child(even) {
   <img src="{{url_for('static', filename='images/' + id)}}"alt="Duderstadt Center (The Dude)", style="width:600px;height:400px;"> 
   </div>
   <div style="font-size: 27px">
-    <p>Building Name or Category Name: {{name}}</p>
+    <p>Building Name: {{name}}</p>
+    <p>Location: {{campus}}</p>
     <p>Selected Time Period: {{time_period}}:00 - {{time_period}}:59</p>
     <p>Congestion Level: {{cong_level}}</p>
     {% endif %}
