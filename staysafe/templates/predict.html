@@ -1,10 +1,11 @@
+<!-- Mainly developed by JD and ZH; Adapted by QX -->
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css')}}">
 </head>
 <body>
-  <body style="background-image: linear-gradient(115deg, rgba(58,58,158,0.8), rgba(136, 136, 206, 0.7))"></body>
+  <body style="background-image: linear-gradient(115deg, rgba(144, 144, 216, 0.8), rgba(224, 224, 243, 0.7))"></body>
 <style>
     #content {
         position: relative;
@@ -20,30 +21,34 @@
         left: 0px;
     }
     .styled-table{
-	border-collapse:collapse;
-	margin:25px 0;
-	position: relative;
-  	margin-left: 30%;
-	font-size:0.9em;
-	font-family:  Lucida Console;
-	min-width:400px;
-	box-shadow:0 0 20px #23418c;
+      border-collapse:collapse;
+      margin:25px 0;
+      margin-left: 20%;
+      position: relative;
+      font-size:0.9em;
+      font-family:  Lucida Console;
+      min-width:400px;
+      box-shadow:0 0 20px #23418c;
+      font-size: 15px;
     }
 
    .styled-table thead tr{
-	background-color: #23418c;
-	color:#ffffff;
-	text-align:left;
+      background-color: #23418c;
+      color:#ffffff;
+      text-align:left;
     }
     .styled-table th,
     .styled-table td{
-	padding:12px 15px;
+	    padding:12px 15px;
     }
     .styled-table tbody tr{
-	border-bottom:1px solid #dddddd;
+	    border-bottom:1px solid #dddddd;
     }
     .styled-table tbody tr:nth-of-type(even){
-	background-color: #f3f3f3;
+	    background-color: #f3f3f3;
+    }
+    .styled-table tbody tr:nth-of-type(odd){
+	    background-color: #c7c7f7;
     }
 
     
@@ -64,7 +69,7 @@
 <br>
 
   {% if buildings_info is defined %}
-   <p style=" font-family: Lucida Console; text-align: center"> <b>Search Results </b> </p>
+   <p style=" font-family: Lucida Console; text-align: center;font-size: 15px;"> <b>Search Results </b> </p>
   <table class = "styled-table">
     <tr>
       <th>Building Name </th>
