@@ -185,6 +185,20 @@ form {
   cursor: pointer;
 }
 
+#content {
+        position: relative;
+    }
+    #content1 img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    #content2 img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
   </style>
 <script>
     function goBack() {
@@ -199,9 +213,16 @@ form {
     <p id="description" class="description text-center">
     </p>
   </header>
-  <div style = "text-align: right; height: 30px;">
-    <button onclick="goBack()">Home</button>
+  <div id="content2">
+    <a href = "/">
+    <img src="{{ url_for('static', filename='images/logo.png')}}" alt="logo" />
+    </a>
   </div>
-  We are students from the University of Michigan and this is the demo webpage for EECS 495 project group, staysafe. 
+  <div id="content1">
+    <a href = "/">
+    <img src="{{ url_for('static', filename='images/images.png')}}" alt="images" width = "50" height="50" />
+    </a>
+  </div>
+  <p>We are students from the University of Michigan and this is the demo webpage for EECS 495 project group, staysafe. </p>
   
 </div>
