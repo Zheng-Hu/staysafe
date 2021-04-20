@@ -9,7 +9,7 @@ import flask
 import staysafe
 import sys
 
-@staysafe.app.route('/predict.html', methods=['GET', 'POST'])
+@staysafe.app.route('/predict', methods=['GET', 'POST'])
 def show_prediction():
     connection = staysafe.model.get_db()
     if flask.request.method == 'POST':
